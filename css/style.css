@@ -1,3 +1,13 @@
+.header_logo-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.header_title {
+  text-align: center;
+  text-transform: uppercase; }
+
 @font-face {
   font-family: "Myriad Pro bold";
   src: url("../fonts/MyriadPro-Bold.woff"); }
@@ -13,12 +23,3 @@
 @font-face {
   font-family: "MyriadPro-Regular";
   src: url("../fonts/MyriadPro-Regular.woff"); }
-
-.header_logo-block {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-body {
-  font-family: "Myriad Pro bold", "Helvetica", sans-serif; }
