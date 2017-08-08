@@ -1,1 +1,7 @@
-
+@inport "global/fonts.scss"
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/content-block.scss";
+body {
+  font-family: $font-bold;
+}
