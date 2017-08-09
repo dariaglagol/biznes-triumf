@@ -1,0 +1,28 @@
+.nominations {
+  margin: 0 auto;
+  background-color: #2e1b16;
+  padding-top: 60px;
+}
+
+.nominations_header {
+  @include headers;
+  color: #ffffff;
+}
+
+.nominations_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1084px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.nominations_item {
+  width: 253px;
+  background-color: #ffffff;
+}
+
+.nominations_item-head {
+  margin-top: 0px;
+}

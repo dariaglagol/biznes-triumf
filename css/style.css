@@ -135,8 +135,8 @@ html {
 .awards-block_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -189,8 +189,8 @@ html {
 .conditions_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -229,8 +229,8 @@ html {
 .btn-block_take-part {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -252,8 +252,8 @@ html {
 .btn-block_text {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -294,3 +294,36 @@ html {
   color: #ffffff;
   background-color: #2e1b16;
   text-transform: lowercase; }
+
+.nominations {
+  margin: 0 auto;
+  background-color: #2e1b16;
+  padding-top: 60px; }
+
+.nominations_header {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #ffffff; }
+
+.nominations_list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1084px;
+  margin: 0 auto;
+  margin-top: 25px; }
+
+.nominations_item {
+  width: 253px;
+  background-color: #ffffff; }
+
+.nominations_item-head {
+  margin-top: 0px; }
