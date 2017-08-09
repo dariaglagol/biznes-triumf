@@ -1,12 +1,5 @@
 .awards-block_header {
-  margin: 0px;
-  padding-top: 85px;
-  font-family: $font-plain;
-  font-size: 30px;
-  line-height: 35px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 10px;
+  @include headers;
 }
 
 .awards-block_list {

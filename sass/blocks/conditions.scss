@@ -1,0 +1,38 @@
+.conditions_header {
+  @include headers;
+  background-color: #c5c6c6;
+  position: relative;
+  z-index: 1;
+  width: 457px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+
+.conditions-inner {
+  margin: 0;
+  margin-top: -10px;
+  padding-top: 45px;
+  padding-bottom: 140px;
+  border-top: 3px solid #000000;
+}
+
+.condition {
+  width: 353px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-family: $font-plain;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  
+  span {
+    font-family: $font-plain;
+    font-weight: 200;
+  }
+}
+
+.condition:last-of-type {
+  padding-bottom: 0px;
+}
