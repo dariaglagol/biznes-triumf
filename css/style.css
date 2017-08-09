@@ -25,9 +25,13 @@
 body {
   margin: 0px; }
 
+.container {
+  padding: 0 58px; }
+
 .header {
   background-image: url("../img/bg-top.jpg");
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 20px; }
 
 .header_logo-block {
   display: -ms-flexbox;
@@ -79,8 +83,21 @@ body {
   text-align: center;
   text-transform: uppercase; }
 
-.container {
-  padding: 0 58px; }
+.header_call {
+  width: 595px;
+  margin: 50px auto;
+  padding: 10px 20px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 4px solid #e41d2d;
+  border-left: 4px solid #e41d2d; }
+
+.header_call-bold {
+  font-weight: 900; }
 
 .logo--fond {
   display: -ms-flexbox;
