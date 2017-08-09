@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "MyriadPro Bold";
+  src: url("../fonts/MyriadPro-Bold.woff"); }
+
+@font-face {
+  font-family: "MyriadPro conditional";
+  src: url("../fonts/MyriadPro-Cond.woff"); }
+
+@font-face {
+  font-family: "MyriadPro italic";
+  src: url("../fonts/MyriadPro-It.woff"); }
+
+@font-face {
+  font-family: "MyriadPro regular";
+  src: url("../fonts/MyriadPro-Regular.woff"); }
+
+@font-face {
+  font-family: "FreeSetExtraCTT";
+  src: url("../fonts/FRS95__C.ttf"); }
+
+@font-face {
+  font-family: "FreeSetC";
+  src: url("../fonts/FRS45__C.pfm"); }
+
+body {
+  margin: 0px; }
+
 .header {
   background-image: url("../img/bg-top.jpg");
   background-size: cover; }
@@ -10,13 +37,47 @@
   padding-top: 60px; }
 
 .header_title {
-  margin-top: 300px;
-  text-align: center;
+  position: relative;
+  width: 322px;
+  margin: 0 auto;
+  margin-top: 235px;
+  padding-left: 157px;
   text-transform: uppercase;
   color: #ffffff; }
 
+.header_title::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 155px;
+  height: 155px;
+  background: url("../img/logo-triumf-white.png") center no-repeat;
+  background-size: contain; }
+
+.header_title > h1 {
+  margin: 0px;
+  text-align: center;
+  font-family: "FreeSetExtraCTT", "Helvetica", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px; }
+
+.header_title > span {
+  padding-left: 25px;
+  font-family: "FreeSetC", "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 50px; }
+
 .header_desc {
-  text-align: center; }
+  margin-top: 35px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase; }
 
 .container {
   padding: 0 58px; }
@@ -32,7 +93,8 @@
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-top: 56px; }
+  margin-top: 52px;
+  font-family: "MyriadPro Bold", "Helvetica", sans-serif; }
 
 .logo_phone,
 .logo_mail,
@@ -41,19 +103,3 @@
 
 .logo_phone {
   margin: 0px; }
-
-@font-face {
-  font-family: "Myriad Pro bold";
-  src: url("../fonts/MyriadPro-Bold.woff"); }
-
-@font-face {
-  font-family: "Myriad Pro cond";
-  src: url("../fonts/MyriadPro-Cond.woff"); }
-
-@font-face {
-  font-family: "Myriad Pro italic";
-  src: url("../fonts/MyriadPro-It.woff"); }
-
-@font-face {
-  font-family: "MyriadPro-Regular";
-  src: url("../fonts/MyriadPro-Regular.woff"); }

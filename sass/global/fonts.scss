@@ -1,27 +1,41 @@
 @font-face {
-  font-family: "Myriad Pro bold";
+  font-family: "MyriadPro Bold";
   src: url("../fonts/MyriadPro-Bold.woff");
 }
 
 @font-face {
-  font-family: "Myriad Pro cond";
+  font-family: "MyriadPro conditional";
   src: url("../fonts/MyriadPro-Cond.woff");
 }
 
 @font-face {
-  font-family: "Myriad Pro italic";
+  font-family: "MyriadPro italic";
   src: url("../fonts/MyriadPro-It.woff");
 }
 
 @font-face {
-  font-family: "MyriadPro-Regular";
+  font-family: "MyriadPro regular";
   src: url("../fonts/MyriadPro-Regular.woff");
 }
 
-$font-italic: "Myriad Pro italic", "Helvetica", sans-serif;
+@font-face {
+  font-family: "FreeSetExtraCTT";
+  src: url("../fonts/FRS95__C.ttf");
+}
 
-$font-bold: "Myriad Pro bold", "Helvetica", sans-serif;
+@font-face {
+  font-family: "FreeSetC";
+  src: url("../fonts/FRS45__C.pfm");
+}
 
-$font-cond: "Myriad Pro Cond", "Helvetica", sans-serif;
+$font-italic: "MyriadPro italic", "Helvetica", sans-serif;
 
-$font-plain: "Myriad Pro Regular", "Helvetica", sans-serif;
+$font-bold: "MyriadPro Bold", "Helvetica", sans-serif;
+
+$font-cond: "MyriadPro conditional", "Helvetica", sans-serif;
+
+$font-plain: "MyriadPro regular", "Helvetica", sans-serif;
+
+$font-header-bold: "FreeSetExtraCTT", "Helvetica", sans-serif;
+
+$font-header-light: "FreeSetC", "Helvetica", sans-serif;

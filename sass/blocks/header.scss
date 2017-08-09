@@ -9,12 +9,49 @@
 }
 
 .header_title {
-  margin-top: 300px;
-  text-align: center;
+  position: relative;
+  width: 322px;
+  margin: 0 auto;
+  margin-top: 235px;
+  padding-left: 157px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.header_desc {
+.header_title::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 155px;
+  height: 155px;
+  background: url("../img/logo-triumf-white.png") center no-repeat;
+  background-size: contain;
+}
+
+.header_title > h1 {
+  margin: 0px;
   text-align: center;
+  font-family: $font-header-bold;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+.header_title > span {
+  padding-left: 25px;
+  font-family: $font-header-light;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.header_desc {
+  margin-top: 35px;
+  font-family: $font-plain;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
 }
