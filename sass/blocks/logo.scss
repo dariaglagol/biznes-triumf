@@ -1,0 +1,22 @@
+.logo {
+  &--fond {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.logo_contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+}
+
+.logo_phone,
+.logo_mail,
+.logo_site {
+  color: #9f9a99;
+}
+
+.logo_phone {
+  margin: 0px;
+}

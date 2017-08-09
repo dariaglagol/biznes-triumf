@@ -1,11 +1,18 @@
+.header {
+  background-image: url("../img/bg-top.jpg");
+  background-size: cover;
+}
 .header_logo-block {
   display: flex;
   justify-content: space-between;
+  padding-top: 60px;
 }
 
 .header_title {
+  margin-top: 300px;
   text-align: center;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header_desc {
