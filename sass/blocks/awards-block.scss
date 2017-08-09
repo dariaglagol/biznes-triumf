@@ -1,0 +1,62 @@
+.awards-block_header {
+  margin: 0px;
+  padding-top: 85px;
+  font-family: $font-plain;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.awards-block_list {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 170px;
+}
+
+.awards-block_item {
+  width: 253px;
+  position: relative;
+  margin: 0px;
+  padding: 41px 0px 45px 0px;
+  font-family: $font-plain;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #e41d2d;
+  color: #ffffff;
+
+  &--avowal::before,
+  &--internship::before,
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: -124px;
+    left: 50%;
+    margin-left: -34px;
+    width: 69px;
+    height: 76px;
+    background: url("../img/icon-cup.png") center no-repeat;
+    background-size: contain;
+  }
+
+  &--internship::before {
+    top: -114px;
+    left: 50%;
+    margin-left: -41px;
+    width: 83px;
+    height: 63px;
+    background: url("../img/icon-hand.png") center no-repeat;
+    background-size: contain;
+  }
+
+  &--gift::before {
+    width: 66px;
+    height: 74px;
+    background: url("../img/icon-prize.png") center no-repeat;
+    background-size: contain;
+  }
+}

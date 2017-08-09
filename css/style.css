@@ -128,3 +128,60 @@ html {
 
 .logo_phone {
   margin: 0px; }
+
+.taking-part {
+  background-color: #c5c6c6; }
+
+.awards-block_header {
+  margin: 0px;
+  padding-top: 85px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px; }
+
+.awards-block_list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 170px; }
+
+.awards-block_item {
+  width: 253px;
+  position: relative;
+  margin: 0px;
+  padding: 41px 0px 45px 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #e41d2d;
+  color: #ffffff; }
+  .awards-block_item--avowal::before, .awards-block_item--internship::before, .awards-block_item--gift::before {
+    content: "";
+    position: absolute;
+    top: -124px;
+    left: 50%;
+    margin-left: -34px;
+    width: 69px;
+    height: 76px;
+    background: url("../img/icon-cup.png") center no-repeat;
+    background-size: contain; }
+  .awards-block_item--internship::before {
+    top: -114px;
+    left: 50%;
+    margin-left: -41px;
+    width: 83px;
+    height: 63px;
+    background: url("../img/icon-hand.png") center no-repeat;
+    background-size: contain; }
+  .awards-block_item--gift::before {
+    width: 66px;
+    height: 74px;
+    background: url("../img/icon-prize.png") center no-repeat;
+    background-size: contain; }
