@@ -1,0 +1,29 @@
+.counter-wrap {
+  width: 370px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 47px; 
+}
+
+.counter-wrap_text,
+.counter-wrap_count {
+  width: 50%;
+  margin: 0px;
+  padding: 17px 0; 
+  font-family: $font-bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #c5c6c6;
+}
+
+.counter-wrap_count {
+  font-family: $font-plain;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #2e1b16;
+  text-transform: lowercase;
+}

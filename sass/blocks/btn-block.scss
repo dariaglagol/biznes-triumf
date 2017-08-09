@@ -1,0 +1,31 @@
+.btn-block_take-part {
+  @include headers;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 530px;
+  margin: 0 auto;
+  margin-top: -53px;
+  padding: 40px 0;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 25px;
+  color: #ffffff;
+  background-color: #e41d2d;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-block_text {
+  @include headers;
+  padding-top: 25px;
+  font-family: $font-bold;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  
+  span {
+    text-transform: lowercase;
+  }
+}
