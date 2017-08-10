@@ -226,7 +226,7 @@ html {
 .conditions_item:last-of-type {
   padding-bottom: 0px; }
 
-.btn-block_take-part {
+.btn-block_item {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   font-size: 25px;
@@ -266,6 +266,9 @@ html {
   .btn-block_text span {
     text-transform: lowercase; }
 
+.btn-block--grey {
+  background-color: #c5c6c6; }
+
 .counter-wrap {
   width: 370px;
   margin: 0 auto;
@@ -298,7 +301,8 @@ html {
 .nominations {
   margin: 0 auto;
   background-color: #2e1b16;
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 160px; }
 
 .nominations_header {
   margin: 0px;
@@ -326,4 +330,325 @@ html {
   background-color: #ffffff; }
 
 .nominations_item-head {
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  text-transform: uppercase; }
+
+.nominations_item-desc {
+  padding: 22px 23px;
+  padding-bottom: 15px; }
+
+.nomination_item-text {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 16px; }
+  .nomination_item-text span {
+    font-weight: 900; }
+
+.nominations_desc {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #ffffff;
+  width: 580px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 8px; }
+
+.nomaiations_docs {
+  width: 312px;
+  margin: 0 auto;
+  margin-top: 27px;
+  position: relative; }
+  .nomaiations_docs a {
+    display: block;
+    width: 255px;
+    margin-left: auto;
+    text-align: center;
+    padding: 17px 0px;
+    font-family: "MyriadPro regular", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    color: #1d0000;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #c5c6c6; }
+  .nomaiations_docs a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 42px;
+    height: 59px;
+    background: url("../img/icon-docs.png") no-repeat center;
+    background-size: contain; }
+
+.steps {
+  padding-top: 90px;
+  padding-bottom: 140px;
+  background-color: #c5c6c6; }
+
+.steps_header {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  width: 480px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 8px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  background-color: #c5c6c6; }
+
+.steps_wrap {
+  margin-top: -10px;
+  border-top: 3px solid #ffffff; }
+
+.steps_list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 58px;
+  padding-top: 130px; }
+
+.steps_item {
+  position: relative;
+  width: 160px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px; }
+
+.steps_item--choose::before,
+.steps_item--register::before,
+.steps_item--story::before,
+.steps_item--speach::before,
+.steps_item--ceremony::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -55px;
+  width: 67px;
+  height: 44px;
+  background: url("../img/icon-choose.png") no-repeat center;
+  background-size: contain; }
+
+.steps_item--register::before {
+  content: "";
+  top: -54px;
+  left: 0px;
+  width: 61px;
+  height: 50px;
+  background: url("../img/icon-monitor.png") no-repeat center;
+  background-size: contain; }
+
+.steps_item--story::before {
+  content: "";
+  top: -65px;
+  left: 0px;
+  width: 69px;
+  height: 62px;
+  background: url("../img/icon-write.png") no-repeat center;
+  background-size: contain; }
+
+.steps_item--speach::before {
+  content: "";
+  top: -65px;
+  left: 0px;
+  width: 49px;
+  height: 69px;
+  background: url("../img/icon-speak.png") no-repeat center;
+  background-size: contain; }
+
+.steps_item--ceremony::before {
+  content: "";
+  top: -66px;
+  left: 0px;
+  width: 47px;
+  height: 67px;
+  background: url("../img/icon-medal.png") no-repeat center;
+  background-size: contain; }
+
+.past-event_text {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 8px; }
+
+.past-event {
+  padding: 80px 0;
+  background-color: #c5c6c6; }
+
+.past-event_inner {
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 27px;
+  position: relative; }
+  .past-event_inner a {
+    display: block;
+    width: 255px;
+    margin-left: auto;
+    text-align: center;
+    padding: 17px 0px;
+    font-family: "MyriadPro regular", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    color: #1d0000;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffffff; }
+  .past-event_inner a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 67px;
+    height: 60px;
+    background: url("../img/icon-video.png") no-repeat center;
+    background-size: contain; }
+
+.winners_header {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding-bottom: 53px; }
+
+.winners {
+  padding: 100px 58px;
+  background-color: #1d0000;
+  color: #ffffff; }
+
+.winners_wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 40px; }
+
+.winners_desc {
+  width: 253px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 11px;
+  line-height: 14px; }
+
+.winners_name {
+  margin: 0px;
+  margin-top: -5px;
+  padding: 5px 17px;
+  background-color: #c5c6c6;
+  font-family: "MyriadPro Bold", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000; }
+  .winners_name span {
+    font-family: "MyriadPro italic", "Helvetica", sans-serif; }
+
+.controls {
+  width: 180px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.controls_first-block,
+.controls_second-block {
+  width: 46%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.controls_thumb {
+  width: 8px;
+  height: 8px;
+  background-color: #c5c6c6;
+  border-radius: 50%; }
+
+.controls_thumb:active {
+  background-color: #ffffff; }
+
+.sponsor {
+  padding-top: 44px;
+  padding-bottom: 114px; }
+
+.sponsor_header {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding-bottom: 28px;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 8px;
+  font-weight: 900; }
+
+.organization {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.organization_item {
+  width: 230px;
+  text-align: center; }
+  .organization_item img,
+  .organization_item span {
+    display: block;
+    margin: 0 auto; }
+
+.organization_item-type {
+  padding-bottom: 10px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: uppercase; }
+
+.organization_item-desc {
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .organization_item-desc span {
+    display: inline;
+    text-transform: lowercase; }
+
+.organization_item:first-child .organization_item-desc {
+  padding-top: 16px; }

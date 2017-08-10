@@ -1,0 +1,96 @@
+.steps {
+  padding-top: 90px;
+  padding-bottom: 140px;
+  background-color: #c5c6c6;
+}
+
+.steps_header {
+  @include headers;
+  width: 480px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 8px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  background-color: #c5c6c6;
+}
+
+.steps_wrap {
+  margin-top: -10px;
+  border-top: 3px solid #ffffff;
+}
+
+.steps_list {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 58px;
+  padding-top: 130px;
+}
+
+.steps_item {
+  position: relative;
+  width: 160px;
+  font-family: $font-plain;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.steps_item--choose::before,
+.steps_item--register::before,
+.steps_item--story::before,
+.steps_item--speach::before,
+.steps_item--ceremony::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -55px;
+  width: 67px;
+  height: 44px;
+  background: url("../img/icon-choose.png") no-repeat center;
+  background-size: contain;
+}
+
+.steps_item--register::before {
+  content: "";
+  top: -54px;
+  left: 0px;
+  width: 61px;
+  height: 50px;
+  background: url("../img/icon-monitor.png") no-repeat center;
+  background-size: contain;
+}
+
+.steps_item--story::before {
+  content: "";
+  top: -65px;
+  left: 0px;
+  width: 69px;
+  height: 62px;
+  background: url("../img/icon-write.png") no-repeat center;
+  background-size: contain;
+}
+
+.steps_item--speach::before {
+  content: "";
+  top: -65px;
+  left: 0px;
+  width: 49px;
+  height: 69px;
+  background: url("../img/icon-speak.png") no-repeat center;
+  background-size: contain;
+}
+
+.steps_item--ceremony::before {
+  content: "";
+  top: -66px;
+  left: 0px;
+  width: 47px;
+  height: 67px;
+  background: url("../img/icon-medal.png") no-repeat center;
+  background-size: contain;
+}

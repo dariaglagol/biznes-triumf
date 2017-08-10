@@ -1,0 +1,40 @@
+.organization {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.organization_item {
+  width: 230px;
+  text-align: center;
+  img,
+  span {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.organization_item-type {
+  padding-bottom: 10px;
+  font-family: $font-plain;
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.organization_item-desc {
+  font-family: $font-plain;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  span {
+    display: inline;
+    text-transform: lowercase;
+  }
+}
+
+.organization_item:first-child .organization_item-desc {
+  padding-top: 16px;
+}

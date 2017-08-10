@@ -1,0 +1,38 @@
+.winners_header {
+  @include headers;
+  padding-bottom: 53px;
+}
+
+.winners {
+  padding: 100px 58px;
+  background-color: #1d0000;
+  color: #ffffff;
+}
+
+.winners_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.winners_desc {
+  width: 253px;
+  font-family: $font-plain;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.winners_name {
+  margin: 0px;
+  margin-top: -5px;
+  padding: 5px 17px;
+  background-color: #c5c6c6;
+  font-family: $font-bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  span {
+    font-family: $font-italic;
+  }
+}

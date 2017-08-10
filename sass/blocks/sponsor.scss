@@ -1,0 +1,13 @@
+.sponsor {
+  padding-top: 44px;
+  padding-bottom: 114px;
+}
+
+.sponsor_header {
+  @include headers;
+  padding-bottom: 28px;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 8px;
+  font-weight: 900;
+}

@@ -1,0 +1,45 @@
+.past-event_text {
+  @include headers;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 8px;
+}
+
+.past-event {
+  padding: 80px 0;
+  background-color: #c5c6c6;
+}
+
+.past-event_inner {
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 27px;
+  position: relative;
+  a {
+    display: block;
+    width: 255px;
+    margin-left: auto;
+    text-align: center;
+    padding: 17px 0px;
+    font-family: $font-plain;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    color: #1d0000;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffffff;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 67px;
+    height: 60px;
+    background: url("../img/icon-video.png") no-repeat
+      center;
+    background-size: contain;
+  }
+}
