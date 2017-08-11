@@ -38,7 +38,7 @@
   padding-bottom: 0px;
 }
 
-@media(min-width:$mobile) {
+@media(min-width:$mobile) and (max-width: 767px) {
   .conditions_header {
     width: 230px;
     padding-left: 8px;

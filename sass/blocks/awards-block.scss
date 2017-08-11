@@ -14,6 +14,7 @@
   width: 253px;
   position: relative;
   margin: 0px;
+  margin-top: 170px;
   padding: 41px 0px 45px 0px;
   font-family: $font-plain;
   font-weight: 900;
@@ -54,7 +55,7 @@
   }
 }
 
-@media(min-width:$mobile) {
+@media(min-width:$mobile) and (max-width: 767px){
   .awards-block_header {
     padding-top: 60px;
     letter-spacing: 0px;
@@ -68,5 +69,15 @@
     margin: 0 auto;
     margin-top: 170px;
     padding: 31px 0;
+  }
+}
+
+@media(min-width:$tablet) and (max-width: 1000px){
+  .awards-block_list {
+    width: 700px;
+  }
+
+  .awards-block_item {
+    width: 200px;
   }
 }

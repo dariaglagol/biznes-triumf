@@ -79,9 +79,10 @@
   font-weight: 900;
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width:767px) {
   .header {
     padding-top: 20px;
+    box-shadow: 768px 800px 0px 0px rgba(0, 0, 0, 0.6) inset;
   }
   .header_logo-block {
     padding-top: 20px;

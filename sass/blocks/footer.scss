@@ -21,9 +21,32 @@
   }
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width: 767px){
   .footer_logos .logo--fond {
     flex-direction: row;
     margin: 0 auto;
+  }
+
+  .footer_logos {
+    padding-top: 40px;
+
+    .logo_contacts {
+      font-size: 16px;
+    }
+  }
+}
+
+@media(min-width:634px) {
+  .footer_logos .logo--fond {
+    margin-top: -35px;
+  }
+}
+
+@media(min-width: $tablet) {
+  .footer_logos .logo--fond {
+    margin-left: auto;
+  }
+  .footer_logos .logo_contacts {
+    margin-top: 63px;
   }
 }

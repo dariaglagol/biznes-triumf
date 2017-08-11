@@ -63,14 +63,54 @@
   margin-top: 7px;
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width: 767px){
   .logo--fond {
     flex-direction: column-reverse;
-    align-items: flex-end;
+    align-items: center;
+    img {
+      width: 60px;
+      height: 80px;
+    }
   }
+
+  .logo_contacts {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+
+  .logo--biz-triumf > img{
+    width: 150px;
+    height: 80px;
+  }
+
   .logo--biz-triumf-bottom {
+    margin: 0 auto;
     margin-bottom: 30px;
+    img {
+      width: 150px;
+      height: 80px;
+    }
+  }
+  .logo--biz-triumf-bottom::before {
+    top: 9px;
   }
 }
 
+@media(min-width: $tablet) {
+  .logo--fond img {
+    width: 80px;
+    height: 110px;
+  }
 
+  .logo_contacts {
+    font-size: 14px;
+  }
+
+   .logo--biz-triumf > img{
+    width: 230px;
+    height: 116px;
+  }
+  .logo--biz-triumf-bottom::before {
+    top: 9px;
+  }
+}

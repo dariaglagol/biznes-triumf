@@ -51,7 +51,7 @@
   top: 0px;
 }
 
-@media(min-width:$mobile) {
+@media(min-width:$mobile) and (max-width: 767px) {
   .btn-block_item {
     width: 280px;
     margin-left: -140px;
@@ -67,5 +67,11 @@
 
   .btn-block--grey .btn-block_item {
     top:12px;
+  }
+}
+
+@media(min-width: $tablet) {
+  .btn-block_text {
+    padding-top: 65px;
   }
 }

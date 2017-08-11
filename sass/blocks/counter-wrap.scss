@@ -28,7 +28,7 @@
   text-transform: lowercase;
 }
 
-@media(min-width:$mobile) {
+@media(min-width:$mobile) and (max-width:767px){
   .counter-wrap {
     flex-direction: column;
     width: 280px;

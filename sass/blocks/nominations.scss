@@ -92,7 +92,7 @@
   }
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width: 767px) {
   .nominations {
     padding-bottom: 110px;
   }
@@ -112,5 +112,15 @@
     a {
       width: 200px;
     }
+  }
+}
+
+@media(min-width:$tablet) {
+  .nominations {
+    padding-bottom: 100px;
+  }
+
+  .nominations_list {
+    justify-content:  space-evenly;
   }
 }

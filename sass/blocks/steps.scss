@@ -95,7 +95,7 @@
   background-size: contain;
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width: 767px){
   .steps {
     padding-bottom: 110px;
   }

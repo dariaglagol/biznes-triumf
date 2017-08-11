@@ -38,14 +38,14 @@
   }
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width: 767px) {
   .winners {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
   .winners_wrap {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .winners_item {

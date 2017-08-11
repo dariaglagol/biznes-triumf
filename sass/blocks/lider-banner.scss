@@ -24,9 +24,10 @@
   }
 }
 
-@media(min-width:$mobile) {
+@media(min-width:$mobile) and (max-width: 900px){
   .lider-banner {
     width: 280px;
+    margin: 0 auto;
   }
 
   .lider-banner_text {
@@ -36,5 +37,11 @@
     &--spacing {
       letter-spacing: 1px;
     }
+  }
+}
+
+@media(min-width: 634px) and (max-width: 900px) {
+  .lider-banner {
+    margin-left: auto;
   }
 }
