@@ -55,6 +55,10 @@
 }
 
 @media(min-width:$mobile) {
+  .awards-block_header {
+    padding-top: 60px;
+    letter-spacing: 0px;
+  }
   .awards-block_list {
     width: 280px;
     flex-wrap: wrap;

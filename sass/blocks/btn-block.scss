@@ -1,3 +1,7 @@
+.btn-block {
+  position: relative;
+}
+
 .btn-block_item {
   @include headers;
   position: relative;
@@ -50,16 +54,18 @@
 @media(min-width:$mobile) {
   .btn-block_item {
     width: 280px;
+    margin-left: -140px;
     font-size: 20px;
     letter-spacing: 4px;
     padding: 25px 0px;
   }
-  .btn-block_item {
-    width: 280px;
-    margin-left: -140px;
-  }
+
   .btn-block_text--grey {
     width: 280px;
     margin: 0 auto;
+  }
+
+  .btn-block--grey .btn-block_item {
+    top:12px;
   }
 }

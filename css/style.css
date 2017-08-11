@@ -199,7 +199,9 @@ html {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     -ms-flex-align: end;
-        align-items: flex-end; } }
+        align-items: flex-end; }
+  .logo--biz-triumf-bottom {
+    margin-bottom: 30px; } }
 
 .taking-part {
   background-color: #c5c6c6; }
@@ -258,6 +260,9 @@ html {
     background-size: contain; }
 
 @media (min-width: 320px) {
+  .awards-block_header {
+    padding-top: 60px;
+    letter-spacing: 0px; }
   .awards-block_list {
     width: 280px;
     -ms-flex-wrap: wrap;
@@ -319,6 +324,9 @@ html {
   .conditions-inner {
     padding-bottom: 110px; } }
 
+.btn-block {
+  position: relative; }
+
 .btn-block_item {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
@@ -375,15 +383,15 @@ html {
 @media (min-width: 320px) {
   .btn-block_item {
     width: 280px;
+    margin-left: -140px;
     font-size: 20px;
     letter-spacing: 4px;
     padding: 25px 0px; }
-  .btn-block_item {
-    width: 280px;
-    margin-left: -140px; }
   .btn-block_text--grey {
     width: 280px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .btn-block--grey .btn-block_item {
+    top: 12px; } }
 
 .counter-wrap {
   width: 370px;
@@ -708,7 +716,9 @@ html {
   .past-event_inner {
     width: 280px; }
     .past-event_inner a {
-      width: 200px; } }
+      width: 200px; }
+  .past-event {
+    padding: 40px 0; } }
 
 .winners_header {
   margin: 0px;
@@ -754,6 +764,9 @@ html {
     font-family: "MyriadPro italic", "Helvetica", sans-serif; }
 
 @media (min-width: 320px) {
+  .winners {
+    padding-top: 40px;
+    padding-bottom: 40px; }
   .winners_wrap {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -900,6 +913,12 @@ html {
   .footer_logos .logo--fond {
     margin-top: -31px; }
 
+@media (min-width: 320px) {
+  .footer_logos .logo--fond {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 0 auto; } }
+
 .lider-banner {
   display: -ms-flexbox;
   display: flex;
@@ -921,3 +940,13 @@ html {
     letter-spacing: 7px; }
   .lider-banner_text--plain {
     font-family: "MyriadPro regular", "Helvetica", sans-serif; }
+
+@media (min-width: 320px) {
+  .lider-banner {
+    width: 280px; }
+  .lider-banner_text {
+    padding: 15px;
+    font-size: 12px;
+    line-height: 22px; }
+    .lider-banner_text--spacing {
+      letter-spacing: 1px; } }

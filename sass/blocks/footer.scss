@@ -20,3 +20,10 @@
     margin-top: -31px;
   }
 }
+
+@media(min-width: $mobile) {
+  .footer_logos .logo--fond {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}

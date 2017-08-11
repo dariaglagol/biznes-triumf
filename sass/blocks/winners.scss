@@ -39,6 +39,11 @@
 }
 
 @media(min-width: $mobile) {
+  .winners {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .winners_wrap {
     justify-content: center;
   }
