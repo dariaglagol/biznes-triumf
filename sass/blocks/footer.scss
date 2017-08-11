@@ -1,0 +1,22 @@
+.footer {
+  padding-top: 67px;
+  background-color: #2e1b16;
+}
+
+.footer_for-user {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 72px;
+  padding-bottom: 40px;
+
+  .logo--fond {
+    margin-top: -31px;
+  }
+}

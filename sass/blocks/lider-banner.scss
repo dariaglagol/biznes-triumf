@@ -1,0 +1,25 @@
+.lider-banner {
+  display: flex;
+  justify-content: center;
+  width: 525px;
+}
+
+.lider-banner_text{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 35px;
+  font-family: $font-bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #c5c6c6;
+
+  &--spacing {
+    letter-spacing: 7px;
+  }
+
+  &--plain {
+    font-family: $font-plain;
+  }
+}

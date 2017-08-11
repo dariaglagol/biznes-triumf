@@ -28,8 +28,20 @@
   span {
     text-transform: lowercase;
   }
+
+  &--grey {
+    padding-top: 78px;
+  }
 }
 
 .btn-block--grey {
+  position: relative;
+  padding-bottom: 49px;
   background-color: #c5c6c6;
+  .btn-block_item {
+    position: absolute;
+    left: 50%;
+    margin-left: -275px;
+    top: 0px;
+  }
 }

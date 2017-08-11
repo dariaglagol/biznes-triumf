@@ -21,3 +21,44 @@
 .logo_phone {
   margin: 0px;
 }
+
+.logo--biz-triumf-bottom {
+  position: relative;
+  padding-left: 75px;
+  p {
+    margin: 5px 0;
+    font-family: $font-plain;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 20px;
+    color: #c5c6c6;
+    text-transform: uppercase;
+  }
+}
+
+.logo--biz-triumf-bottom::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  width: 65px;
+  height: 65px;
+  background: url("../../img/logo-triumf-grey.png") no-repeat center;
+  background-size: contain;
+}
+
+.logo--biz-triumf-bottom p:nth-child(2) {
+  margin: 0 auto;
+  font-family: $font-header-bold;
+  font-size: 23px;
+  span {
+    font-family: $font-plain;
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 300;
+  }
+}
+
+.logo--biz-triumf-bottom p:nth-child(3) {
+  margin-top: 7px;
+}
