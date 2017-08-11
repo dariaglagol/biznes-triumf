@@ -34,9 +34,14 @@ html {
 .container {
   padding: 0 58px; }
 
+@media (min-width: 320px) {
+  .container {
+    padding: 0 20px; } }
+
 .header {
   background-image: url("../img/bg-top.jpg");
   background-size: cover;
+  padding-top: 0px;
   padding-bottom: 20px;
   background-position: center;
   background-repeat: no-repeat; }
@@ -107,6 +112,31 @@ html {
 .header_call-bold {
   font-weight: 900; }
 
+@media (min-width: 320px) {
+  .header {
+    padding-top: 20px; }
+  .header_logo-block {
+    padding-top: 20px; }
+  .header_title {
+    width: 300px;
+    margin-top: 100px;
+    padding-top: 170px;
+    padding-left: 0px; }
+  .header_title::before {
+    left: 50%;
+    margin-left: -77px; }
+  .header_title > h1,
+  .header_title > span {
+    font-size: 48px;
+    line-height: 50px; }
+  .header_title > span {
+    padding-left: 32px; }
+  .header_desc {
+    font-size: 16px;
+    line-height: 24px; }
+  .header_call {
+    width: 280px; } }
+
 .logo--fond {
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +194,13 @@ html {
 .logo--biz-triumf-bottom p:nth-child(3) {
   margin-top: 7px; }
 
+@media (min-width: 320px) {
+  .logo--fond {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: end;
+        align-items: flex-end; } }
+
 .taking-part {
   background-color: #c5c6c6; }
 
@@ -183,8 +220,7 @@ html {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 800px;
-  margin: 0 auto;
-  margin-top: 170px; }
+  margin: 0 auto; }
 
 .awards-block_item {
   width: 253px;
@@ -220,6 +256,16 @@ html {
     height: 74px;
     background: url("../img/icon-prize.png") center no-repeat;
     background-size: contain; }
+
+@media (min-width: 320px) {
+  .awards-block_list {
+    width: 280px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .awards-block_item {
+    margin: 0 auto;
+    margin-top: 170px;
+    padding: 31px 0; } }
 
 .conditions_header {
   margin: 0px;
@@ -260,6 +306,18 @@ html {
 
 .conditions_item:last-of-type {
   padding-bottom: 0px; }
+
+@media (min-width: 320px) {
+  .conditions_header {
+    width: 230px;
+    padding-left: 8px;
+    font-size: 21px;
+    letter-spacing: 0px; }
+  .conditions_item {
+    width: 260px;
+    font-size: 16px; }
+  .conditions-inner {
+    padding-bottom: 110px; } }
 
 .btn-block_item {
   margin: 0px;
@@ -313,6 +371,13 @@ html {
     margin-left: -275px;
     top: 0px; }
 
+@media (min-width: 320px) {
+  .btn-block_item {
+    width: 280px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 25px 0px; } }
+
 .counter-wrap {
   width: 370px;
   margin: 0 auto;
@@ -342,6 +407,17 @@ html {
   background-color: #2e1b16;
   text-transform: lowercase; }
 
+@media (min-width: 320px) {
+  .counter-wrap {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 280px;
+    -ms-flex-align: center;
+        align-items: center; }
+  .counter-wrap_text,
+  .counter-wrap_count {
+    width: 70%; } }
+
 .nominations {
   margin: 0 auto;
   background-color: #2e1b16;
@@ -366,11 +442,11 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1084px;
-  margin: 0 auto;
-  margin-top: 25px; }
+  margin: 0 auto; }
 
 .nominations_item {
   width: 253px;
+  margin-top: 25px;
   background-color: #ffffff; }
 
 .nominations_item-head {
@@ -407,12 +483,12 @@ html {
   line-height: 20px;
   letter-spacing: 8px; }
 
-.nomaiations_docs {
+.nominations_docs {
   width: 312px;
   margin: 0 auto;
   margin-top: 27px;
   position: relative; }
-  .nomaiations_docs a {
+  .nominations_docs a {
     display: block;
     width: 255px;
     margin-left: auto;
@@ -426,7 +502,7 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     background-color: #c5c6c6; }
-  .nomaiations_docs a::before {
+  .nominations_docs a::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -435,6 +511,21 @@ html {
     height: 59px;
     background: url("../img/icon-docs.png") no-repeat center;
     background-size: contain; }
+
+@media (min-width: 320px) {
+  .nominations {
+    padding-bottom: 110px; }
+  .nominations_list {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .nominations_desc {
+    width: 280px;
+    font-size: 16px;
+    line-height: 20px; }
+  .nominations_docs {
+    width: 250px; }
+    .nominations_docs a {
+      width: 200px; } }
 
 .steps {
   padding-top: 90px;

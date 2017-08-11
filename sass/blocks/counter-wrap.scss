@@ -4,14 +4,14 @@
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
-  margin-bottom: 47px; 
+  margin-bottom: 47px;
 }
 
 .counter-wrap_text,
 .counter-wrap_count {
   width: 50%;
   margin: 0px;
-  padding: 17px 0; 
+  padding: 17px 0;
   font-family: $font-bold;
   font-size: 13px;
   line-height: 15px;
@@ -26,4 +26,16 @@
   color: #ffffff;
   background-color: #2e1b16;
   text-transform: lowercase;
+}
+
+@media(min-width:$mobile) {
+  .counter-wrap {
+    flex-direction: column;
+    width: 280px;
+    align-items: center;
+  }
+  .counter-wrap_text,
+  .counter-wrap_count {
+    width: 70%;
+  }
 }

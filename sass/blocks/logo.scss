@@ -62,3 +62,12 @@
 .logo--biz-triumf-bottom p:nth-child(3) {
   margin-top: 7px;
 }
+
+@media(min-width: $mobile) {
+  .logo--fond {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+}
+
+

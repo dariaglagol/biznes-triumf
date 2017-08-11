@@ -27,7 +27,7 @@
   line-height: 25px;
   font-weight: 900;
   text-transform: uppercase;
-  
+
   span {
     font-family: $font-plain;
     font-weight: 200;
@@ -36,4 +36,20 @@
 
 .conditions_item:last-of-type {
   padding-bottom: 0px;
+}
+
+@media(min-width:$mobile) {
+  .conditions_header {
+    width: 230px;
+    padding-left: 8px;
+    font-size: 21px;
+    letter-spacing: 0px;
+  }
+  .conditions_item {
+    width: 260px;
+    font-size: 16px;
+  }
+  .conditions-inner {
+    padding-bottom: 110px;
+  }
 }

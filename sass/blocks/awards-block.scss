@@ -8,7 +8,6 @@
   justify-content: space-between;
   width: 800px;
   margin: 0 auto;
-  margin-top: 170px;
 }
 
 .awards-block_item {
@@ -52,5 +51,18 @@
     height: 74px;
     background: url("../img/icon-prize.png") center no-repeat;
     background-size: contain;
+  }
+}
+
+@media(min-width:$mobile) {
+  .awards-block_list {
+    width: 280px;
+    flex-wrap: wrap;
+  }
+
+  .awards-block_item {
+    margin: 0 auto;
+    margin-top: 170px;
+    padding: 31px 0;
   }
 }

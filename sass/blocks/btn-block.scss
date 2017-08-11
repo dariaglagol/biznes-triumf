@@ -45,3 +45,12 @@
     top: 0px;
   }
 }
+
+@media(min-width:$mobile) {
+  .btn-block_item {
+    width: 280px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 25px 0px;
+  }
+}

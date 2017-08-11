@@ -16,11 +16,11 @@
   flex-wrap: wrap;
   max-width: 1084px;
   margin: 0 auto;
-  margin-top: 25px;
 }
 
 .nominations_item {
   width: 253px;
+  margin-top: 25px;
   background-color: #ffffff;
 }
 
@@ -58,7 +58,7 @@
   letter-spacing: 8px;
 }
 
-.nomaiations_docs {
+.nominations_docs {
   width: 312px;
   margin: 0 auto;
   margin-top: 27px;
@@ -89,5 +89,28 @@
     background: url("../img/icon-docs.png") no-repeat
       center;
     background-size: contain;
+  }
+}
+
+@media(min-width: $mobile) {
+  .nominations {
+    padding-bottom: 110px;
+  }
+
+  .nominations_list {
+    justify-content: center;
+  }
+
+  .nominations_desc {
+    width: 280px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .nominations_docs {
+    width: 250px;
+    a {
+      width: 200px;
+    }
   }
 }
