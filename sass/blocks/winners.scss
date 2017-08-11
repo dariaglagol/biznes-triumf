@@ -4,7 +4,8 @@
 }
 
 .winners {
-  padding: 100px 58px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #1d0000;
   color: #ffffff;
 }
@@ -34,5 +35,15 @@
   color: #000000;
   span {
     font-family: $font-italic;
+  }
+}
+
+@media(min-width: $mobile) {
+  .winners_wrap {
+    justify-content: center;
+  }
+
+  .winners_item {
+    margin-bottom: 10px;
   }
 }

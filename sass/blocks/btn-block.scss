@@ -38,12 +38,13 @@
   position: relative;
   padding-bottom: 49px;
   background-color: #c5c6c6;
-  .btn-block_item {
-    position: absolute;
-    left: 50%;
-    margin-left: -275px;
-    top: 0px;
-  }
+}
+
+.btn-block_item {
+  position: absolute;
+  left: 50%;
+  margin-left: -275px;
+  top: 0px;
 }
 
 @media(min-width:$mobile) {
@@ -52,5 +53,13 @@
     font-size: 20px;
     letter-spacing: 4px;
     padding: 25px 0px;
+  }
+  .btn-block_item {
+    width: 280px;
+    margin-left: -140px;
+  }
+  .btn-block_text--grey {
+    width: 280px;
+    margin: 0 auto;
   }
 }

@@ -1,6 +1,7 @@
 .organization {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -37,4 +38,10 @@
 
 .organization_item:first-child .organization_item-desc {
   padding-top: 16px;
+}
+
+@media(min-width: $mobile) {
+  .organization {
+
+  }
 }

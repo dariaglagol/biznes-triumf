@@ -43,3 +43,12 @@
     background-size: contain;
   }
 }
+
+@media(min-width: $mobile) {
+  .past-event_inner {
+    width: 280px;
+    a {
+      width: 200px;
+    }
+  }
+}

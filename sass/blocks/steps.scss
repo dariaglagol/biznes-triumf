@@ -96,5 +96,50 @@
 }
 
 @media(min-width: $mobile) {
+  .steps {
+    padding-bottom: 110px;
+  }
 
+  .steps_header {
+    width: 200px;
+    letter-spacing: 0px;
+  }
+
+  .steps_list {
+    flex-wrap: wrap;
+    padding-top: 35px;
+  }
+
+  .steps_item {
+    margin-top: 77px;
+    text-align: center;
+  }
+
+  .steps_item--choose::before,
+  .steps_item--register::before,
+  .steps_item--story::before,
+  .steps_item--speach::before,
+  .steps_item--ceremony::before {
+    left: 50%;
+  }
+
+  .steps_item--choose::before {
+    margin-left: -33px;
+  }
+
+  .steps_item--register::before {
+    margin-left: -30px;
+  }
+
+  .steps_item--story::before {
+    margin-left: -35px;
+  }
+
+  .steps_item--speach::before {
+    margin-left: -25px;
+  }
+
+  .steps_item--ceremony::before {
+    margin-left: -23px;
+  }
 }
