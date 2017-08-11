@@ -112,7 +112,7 @@ html {
 .header_call-bold {
   font-weight: 900; }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .header {
     padding-top: 20px; }
   .header_logo-block {
@@ -194,7 +194,7 @@ html {
 .logo--biz-triumf-bottom p:nth-child(3) {
   margin-top: 7px; }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .logo--fond {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
@@ -202,6 +202,10 @@ html {
         align-items: flex-end; }
   .logo--biz-triumf-bottom {
     margin-bottom: 30px; } }
+
+@media (min-width: 768px) {
+  .logo_contacts {
+    font-size: 14px; } }
 
 .taking-part {
   background-color: #c5c6c6; }
@@ -259,7 +263,7 @@ html {
     background: url("../img/icon-prize.png") center no-repeat;
     background-size: contain; }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .awards-block_header {
     padding-top: 60px;
     letter-spacing: 0px; }
@@ -271,6 +275,12 @@ html {
     margin: 0 auto;
     margin-top: 170px;
     padding: 31px 0; } }
+
+@media (min-width: 768px) {
+  .awards-block_list {
+    width: 700px; }
+  .awards-block_item {
+    width: 200px; } }
 
 .conditions_header {
   margin: 0px;
@@ -943,7 +953,8 @@ html {
 
 @media (min-width: 320px) {
   .lider-banner {
-    width: 280px; }
+    width: 280px;
+    margin: 0 auto; }
   .lider-banner_text {
     padding: 15px;
     font-size: 12px;

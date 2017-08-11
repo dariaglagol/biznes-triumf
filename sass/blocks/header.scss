@@ -79,7 +79,7 @@
   font-weight: 900;
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width:$tablet){
   .header {
     padding-top: 20px;
   }

@@ -54,7 +54,7 @@
   }
 }
 
-@media(min-width:$mobile) {
+@media(min-width:$mobile) and (max-width: $tablet){
   .awards-block_header {
     padding-top: 60px;
     letter-spacing: 0px;
@@ -68,5 +68,15 @@
     margin: 0 auto;
     margin-top: 170px;
     padding: 31px 0;
+  }
+}
+
+@media(min-width:$tablet) {
+  .awards-block_list {
+    width: 700px;
+  }
+
+  .awards-block_item {
+    width: 200px;
   }
 }
