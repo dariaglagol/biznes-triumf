@@ -229,7 +229,9 @@ html {
     width: 230px;
     height: 116px; }
   .logo--biz-triumf-bottom::before {
-    top: 9px; } }
+    top: 9px; }
+  .logo_contacts {
+    font-size: 14px; } }
 
 .taking-part {
   background-color: #c5c6c6; }
