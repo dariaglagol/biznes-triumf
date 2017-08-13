@@ -1,12 +1,12 @@
 .steps {
-  padding-top: 90px;
-  padding-bottom: 140px;
+  padding-top: 87px;
+  padding-bottom: 112px;
   background-color: #c5c6c6;
 }
 
 .steps_header {
   @include headers;
-  width: 480px;
+  width: 503px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 8px;
@@ -23,21 +23,22 @@
 
 .steps_list {
   display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 990px;
   margin: 0 auto;
   padding: 0 58px;
-  padding-top: 130px;
+  padding-top: 112px;
 }
 
 .steps_item {
   position: relative;
-  width: 160px;
+  width: 150px;
   font-family: $font-plain;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 21px;
+  line-height: 27px;
 }
 
 .steps_item--choose::before,
@@ -47,8 +48,8 @@
 .steps_item--ceremony::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: -55px;
+  left: -6px;
+  top: -58px;
   width: 67px;
   height: 44px;
   background: url("../img/icon-choose.png") no-repeat center;
@@ -57,8 +58,8 @@
 
 .steps_item--register::before {
   content: "";
-  top: -54px;
-  left: 0px;
+  top: -61px;
+  left: -3px;
   width: 61px;
   height: 50px;
   background: url("../img/icon-monitor.png") no-repeat center;
@@ -67,8 +68,8 @@
 
 .steps_item--story::before {
   content: "";
-  top: -65px;
-  left: 0px;
+  top: -66px;
+  left: -3px;
   width: 69px;
   height: 62px;
   background: url("../img/icon-write.png") no-repeat center;
@@ -77,7 +78,7 @@
 
 .steps_item--speach::before {
   content: "";
-  top: -65px;
+  top: -70px;
   left: 0px;
   width: 49px;
   height: 69px;
@@ -87,12 +88,18 @@
 
 .steps_item--ceremony::before {
   content: "";
-  top: -66px;
+  top: -70px;
   left: 0px;
   width: 47px;
   height: 67px;
   background: url("../img/icon-medal.png") no-repeat center;
   background-size: contain;
+}
+
+@media(max-width: 415px) {
+  .steps_list {
+    justify-content: center;
+  }
 }
 
 @media(min-width: $mobile) and (max-width: 767px){
@@ -141,5 +148,17 @@
 
   .steps_item--ceremony::before {
     margin-left: -23px;
+  }
+}
+
+@media(min-width: $tablet) and (max-width: 990px) {
+  .steps_list {
+    max-width: 750px;
+  }
+  
+  .steps_item {
+    width:120px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

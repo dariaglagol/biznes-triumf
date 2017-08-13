@@ -4,12 +4,11 @@
 
 .btn-block_item {
   @include headers;
-  position: relative;
   z-index: 1;
   display: block;
-  width: 530px;
+  width: 529px;
   margin: 0 auto;
-  margin-top: -53px;
+  margin-top: -59px;
   padding: 40px 0;
   font-weight: 900;
   font-size: 25px;
@@ -24,7 +23,7 @@
   @include headers;
   padding-top: 25px;
   font-family: $font-bold;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 20px;
   font-weight: 900;
   letter-spacing: 6px;
@@ -47,7 +46,7 @@
 .btn-block_item {
   position: absolute;
   left: 50%;
-  margin-left: -275px;
+  margin-left: -264px;
   top: 0px;
 }
 
@@ -72,6 +71,6 @@
 
 @media(min-width: $tablet) {
   .btn-block_text {
-    padding-top: 65px;
+    padding-top: 68px;
   }
 }

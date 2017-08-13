@@ -1,6 +1,6 @@
 .awards-block_header {
   @include headers;
-  padding-top: 85px;
+  padding-top: 81px;
 }
 
 .awards-block_list {
@@ -14,9 +14,10 @@
   width: 253px;
   position: relative;
   margin: 0px;
-  margin-top: 170px;
-  padding: 41px 0px 45px 0px;
+  margin-top: 167px;
+  padding: 38px 0px 45px 0px;
   font-family: $font-plain;
+  font-size: 19px;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -28,9 +29,9 @@
   &--gift::before {
     content: "";
     position: absolute;
-    top: -124px;
+    top: -109px;
     left: 50%;
-    margin-left: -34px;
+    margin-left: -38px;
     width: 69px;
     height: 76px;
     background: url("../img/icon-cup.png") center no-repeat;
@@ -38,7 +39,7 @@
   }
 
   &--internship::before {
-    top: -114px;
+    top: -96px;
     left: 50%;
     margin-left: -41px;
     width: 83px;
@@ -50,6 +51,8 @@
   &--gift::before {
     width: 66px;
     height: 74px;
+    top: -117px;
+    margin-left: -32px;
     background: url("../img/icon-prize.png") center no-repeat;
     background-size: contain;
   }

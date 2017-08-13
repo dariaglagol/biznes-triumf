@@ -1,12 +1,13 @@
 .nominations {
   margin: 0 auto;
   background-color: #2e1b16;
-  padding-top: 60px;
+  padding-top: 55px;
   padding-bottom: 160px;
 }
 
 .nominations_header {
   @include headers;
+  font-size: 27px;
   color: #ffffff;
 }
 
@@ -20,19 +21,19 @@
 
 .nominations_item {
   width: 253px;
-  margin-top: 25px;
+  margin-top: 21px;
   background-color: #ffffff;
 }
 
 .nominations_item-head {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-family: $font-plain;
   text-transform: uppercase;
 }
 
 .nominations_item-desc {
-  padding: 22px 23px;
+  padding: 13px 23px;
   padding-bottom: 15px;
 }
 
@@ -52,16 +53,16 @@
   color: #ffffff;
   width: 580px;
   margin: 0 auto;
-  margin-top: 60px;
-  font-size: 18px;
-  line-height: 20px;
+  margin-top: 56px;
+  font-size: 14px;
+  line-height: 21px;
   letter-spacing: 8px;
 }
 
 .nominations_docs {
-  width: 312px;
+  width: 255px;
   margin: 0 auto;
-  margin-top: 27px;
+  margin-top: 24px;
   position: relative;
   a {
     display: block;
@@ -82,8 +83,8 @@
   a::before {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 1px;
+    left: -57px;
     width: 42px;
     height: 59px;
     background: url("../img/icon-docs.png") no-repeat
@@ -112,10 +113,14 @@
     a {
       width: 200px;
     }
+    
+    a::before {
+      left: -7px;
+    }
   }
 }
 
-@media(min-width:$tablet) {
+@media(min-width:$tablet)  and (max-width: 1024px) {
   .nominations {
     padding-bottom: 100px;
   }

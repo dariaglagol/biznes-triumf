@@ -2,7 +2,7 @@
   padding: 0 58px;
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width: 900px){
   .container {
     padding: 0 20px;
   }

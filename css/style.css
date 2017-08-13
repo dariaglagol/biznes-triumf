@@ -34,7 +34,7 @@ html {
 .container {
   padding: 0 58px; }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 900px) {
   .container {
     padding: 0 20px; } }
 
@@ -43,7 +43,7 @@ html {
   background-size: cover;
   padding-top: 0px;
   padding-bottom: 20px;
-  background-position: center;
+  background-position: center 0px;
   background-repeat: no-repeat; }
 
 .header_logo-block {
@@ -57,7 +57,7 @@ html {
   position: relative;
   width: 475px;
   margin: 0 auto;
-  margin-top: 255px;
+  margin-top: 287px;
   padding-left: 157px;
   text-transform: uppercase;
   color: #ffffff; }
@@ -65,8 +65,8 @@ html {
 .header_title::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 0px;
+  top: 9px;
+  left: -23px;
   width: 155px;
   height: 155px;
   background: url("../img/logo-triumf-white.png") center no-repeat;
@@ -77,32 +77,33 @@ html {
   text-align: center;
   font-family: "FreeSetExtraCTT", "Helvetica", sans-serif;
   font-weight: 900;
-  font-size: 56px;
-  line-height: 56px; }
+  font-size: 63px;
+  line-height: 57px; }
 
 .header_title > span {
-  padding-left: 25px;
+  padding-left: 13px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   font-weight: 300;
-  font-size: 50px;
-  line-height: 50px; }
+  font-size: 66px;
+  line-height: 53px; }
 
 .header_desc {
-  margin-top: 35px;
+  margin-top: 28px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 30px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase; }
 
 .header_call {
-  width: 638px;
+  width: 749px;
   margin: 50px auto;
-  padding: 10px 20px;
+  margin-bottom: 45px;
+  padding: 10px 10px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 29px;
+  line-height: 37px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -136,7 +137,12 @@ html {
     font-size: 16px;
     line-height: 24px; }
   .header_call {
-    width: 280px; } }
+    width: 280px;
+    font-size: 20px; } }
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .header_call {
+    width: 685px; } }
 
 .logo--fond {
   display: -ms-flexbox;
@@ -149,7 +155,7 @@ html {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-top: 52px;
+  margin-top: 65px;
   font-family: "MyriadPro Bold", "Helvetica", sans-serif; }
 
 .logo_phone,
@@ -158,7 +164,9 @@ html {
   color: #9f9a99; }
 
 .logo_phone {
-  margin: 0px; }
+  margin: 0px;
+  padding-bottom: 5px;
+  font-size: 16px; }
 
 .logo--biz-triumf-bottom {
   position: relative;
@@ -221,17 +229,16 @@ html {
 
 @media (min-width: 768px) {
   .logo--fond img {
-    width: 80px;
-    height: 110px; }
+    width: 91px;
+    height: 116px;
+    margin-right: -4px; }
   .logo_contacts {
-    font-size: 14px; }
+    font-size: 13px; }
   .logo--biz-triumf > img {
     width: 230px;
     height: 116px; }
   .logo--biz-triumf-bottom::before {
-    top: 9px; }
-  .logo_contacts {
-    font-size: 14px; } }
+    top: 9px; } }
 
 .taking-part {
   background-color: #c5c6c6; }
@@ -239,12 +246,12 @@ html {
 .awards-block_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  padding-top: 85px; }
+  padding-top: 81px; }
 
 .awards-block_list {
   display: -ms-flexbox;
@@ -258,9 +265,10 @@ html {
   width: 253px;
   position: relative;
   margin: 0px;
-  margin-top: 170px;
-  padding: 41px 0px 45px 0px;
+  margin-top: 167px;
+  padding: 38px 0px 45px 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 19px;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -269,15 +277,15 @@ html {
   .awards-block_item--avowal::before, .awards-block_item--internship::before, .awards-block_item--gift::before {
     content: "";
     position: absolute;
-    top: -124px;
+    top: -109px;
     left: 50%;
-    margin-left: -34px;
+    margin-left: -38px;
     width: 69px;
     height: 76px;
     background: url("../img/icon-cup.png") center no-repeat;
     background-size: contain; }
   .awards-block_item--internship::before {
-    top: -114px;
+    top: -96px;
     left: 50%;
     margin-left: -41px;
     width: 83px;
@@ -287,6 +295,8 @@ html {
   .awards-block_item--gift::before {
     width: 66px;
     height: 74px;
+    top: -117px;
+    margin-left: -32px;
     background: url("../img/icon-prize.png") center no-repeat;
     background-size: contain; }
 
@@ -312,12 +322,12 @@ html {
 .conditions_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  padding-top: 85px;
+  padding-top: 99px;
   padding-left: 20px;
   padding-right: 8px;
   background-color: #c5c6c6;
@@ -334,12 +344,12 @@ html {
   border-top: 3px solid #000000; }
 
 .conditions_item {
-  width: 352px;
+  width: 438px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 900;
   text-transform: uppercase; }
   .conditions_item span {
@@ -367,17 +377,16 @@ html {
 .btn-block_item {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  position: relative;
   z-index: 1;
   display: block;
-  width: 530px;
+  width: 529px;
   margin: 0 auto;
-  margin-top: -53px;
+  margin-top: -59px;
   padding: 40px 0;
   font-weight: 900;
   font-size: 25px;
@@ -390,14 +399,14 @@ html {
 .btn-block_text {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
   padding-top: 25px;
   font-family: "MyriadPro Bold", "Helvetica", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 20px;
   font-weight: 900;
   letter-spacing: 6px; }
@@ -414,7 +423,7 @@ html {
 .btn-block_item {
   position: absolute;
   left: 50%;
-  margin-left: -275px;
+  margin-left: -264px;
   top: 0px; }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -432,7 +441,7 @@ html {
 
 @media (min-width: 768px) {
   .btn-block_text {
-    padding-top: 65px; } }
+    padding-top: 68px; } }
 
 .counter-wrap {
   width: 370px;
@@ -441,16 +450,16 @@ html {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 47px; }
 
 .counter-wrap_text,
 .counter-wrap_count {
   width: 50%;
   margin: 0px;
-  padding: 17px 0;
+  padding: 19px 0;
   font-family: "MyriadPro Bold", "Helvetica", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -477,17 +486,18 @@ html {
 .nominations {
   margin: 0 auto;
   background-color: #2e1b16;
-  padding-top: 60px;
+  padding-top: 55px;
   padding-bottom: 160px; }
 
 .nominations_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
+  font-size: 27px;
   color: #ffffff; }
 
 .nominations_list {
@@ -502,17 +512,17 @@ html {
 
 .nominations_item {
   width: 253px;
-  margin-top: 25px;
+  margin-top: 21px;
   background-color: #ffffff; }
 
 .nominations_item-head {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   text-transform: uppercase; }
 
 .nominations_item-desc {
-  padding: 22px 23px;
+  padding: 13px 23px;
   padding-bottom: 15px; }
 
 .nomination_item-text {
@@ -526,7 +536,7 @@ html {
 .nominations_desc {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -534,15 +544,15 @@ html {
   color: #ffffff;
   width: 580px;
   margin: 0 auto;
-  margin-top: 60px;
-  font-size: 18px;
-  line-height: 20px;
+  margin-top: 56px;
+  font-size: 14px;
+  line-height: 21px;
   letter-spacing: 8px; }
 
 .nominations_docs {
-  width: 312px;
+  width: 255px;
   margin: 0 auto;
-  margin-top: 27px;
+  margin-top: 24px;
   position: relative; }
   .nominations_docs a {
     display: block;
@@ -561,8 +571,8 @@ html {
   .nominations_docs a::before {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 1px;
+    left: -57px;
     width: 42px;
     height: 59px;
     background: url("../img/icon-docs.png") no-repeat center;
@@ -581,9 +591,11 @@ html {
   .nominations_docs {
     width: 250px; }
     .nominations_docs a {
-      width: 200px; } }
+      width: 200px; }
+    .nominations_docs a::before {
+      left: -7px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .nominations {
     padding-bottom: 100px; }
   .nominations_list {
@@ -591,19 +603,19 @@ html {
         justify-content: space-evenly; } }
 
 .steps {
-  padding-top: 90px;
-  padding-bottom: 140px;
+  padding-top: 87px;
+  padding-bottom: 112px;
   background-color: #c5c6c6; }
 
 .steps_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  width: 480px;
+  width: 503px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 8px;
@@ -619,21 +631,23 @@ html {
 .steps_list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  max-width: 1200px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 990px;
   margin: 0 auto;
   padding: 0 58px;
-  padding-top: 130px; }
+  padding-top: 112px; }
 
 .steps_item {
   position: relative;
-  width: 160px;
+  width: 150px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 18px;
-  line-height: 18px; }
+  font-size: 21px;
+  line-height: 27px; }
 
 .steps_item--choose::before,
 .steps_item--register::before,
@@ -642,8 +656,8 @@ html {
 .steps_item--ceremony::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: -55px;
+  left: -6px;
+  top: -58px;
   width: 67px;
   height: 44px;
   background: url("../img/icon-choose.png") no-repeat center;
@@ -651,8 +665,8 @@ html {
 
 .steps_item--register::before {
   content: "";
-  top: -54px;
-  left: 0px;
+  top: -61px;
+  left: -3px;
   width: 61px;
   height: 50px;
   background: url("../img/icon-monitor.png") no-repeat center;
@@ -660,8 +674,8 @@ html {
 
 .steps_item--story::before {
   content: "";
-  top: -65px;
-  left: 0px;
+  top: -66px;
+  left: -3px;
   width: 69px;
   height: 62px;
   background: url("../img/icon-write.png") no-repeat center;
@@ -669,7 +683,7 @@ html {
 
 .steps_item--speach::before {
   content: "";
-  top: -65px;
+  top: -70px;
   left: 0px;
   width: 49px;
   height: 69px;
@@ -678,12 +692,17 @@ html {
 
 .steps_item--ceremony::before {
   content: "";
-  top: -66px;
+  top: -70px;
   left: 0px;
   width: 47px;
   height: 67px;
   background: url("../img/icon-medal.png") no-repeat center;
   background-size: contain; }
+
+@media (max-width: 415px) {
+  .steps_list {
+    -ms-flex-pack: center;
+        justify-content: center; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .steps {
@@ -715,26 +734,33 @@ html {
   .steps_item--ceremony::before {
     margin-left: -23px; } }
 
+@media (min-width: 768px) and (max-width: 990px) {
+  .steps_list {
+    max-width: 750px; }
+  .steps_item {
+    width: 120px;
+    font-size: 16px;
+    line-height: 24px; } }
+
 .past-event_text {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 8px; }
+  font-weight: 900; }
 
 .past-event {
   padding: 80px 0;
+  padding-bottom: 86px;
   background-color: #c5c6c6; }
 
 .past-event_inner {
-  width: 340px;
+  width: 256px;
   margin: 0 auto;
-  margin-top: 27px;
+  margin-top: 23px;
   position: relative; }
   .past-event_inner a {
     display: block;
@@ -753,25 +779,30 @@ html {
   .past-event_inner a::before {
     content: "";
     position: absolute;
-    bottom: -4px;
-    left: 0px;
+    bottom: -3px;
+    left: -82px;
     width: 67px;
     height: 60px;
     background: url("../img/icon-video.png") no-repeat center;
     background-size: contain; }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 900px) {
   .past-event_inner {
     width: 280px; }
     .past-event_inner a {
       width: 200px; }
+    .past-event_inner a::before {
+      left: -7px; }
   .past-event {
-    padding: 40px 0; } }
+    padding: 40px 0; }
+  .past-event_text {
+    font-size: 20px;
+    letter-spacing: 2px; } }
 
 .winners_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -779,8 +810,8 @@ html {
   padding-bottom: 53px; }
 
 .winners {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 94px;
+  padding-bottom: 51px;
   background-color: #1d0000;
   color: #ffffff; }
 
@@ -803,6 +834,7 @@ html {
   margin: 0px;
   margin-top: -5px;
   padding: 5px 17px;
+  padding-right: 0px;
   background-color: #c5c6c6;
   font-family: "MyriadPro Bold", "Helvetica", sans-serif;
   font-size: 16px;
@@ -845,7 +877,7 @@ html {
 .sponsor_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -853,7 +885,7 @@ html {
   padding-bottom: 28px;
   font-size: 16px;
   line-height: 18px;
-  letter-spacing: 8px;
+  letter-spacing: 7px;
   font-weight: 900; }
 
 .organization {
@@ -895,9 +927,9 @@ html {
   padding-top: 16px; }
 
 .agreement-docs {
-  width: 340px;
+  width: 256px;
   margin: 0 auto;
-  margin-top: 27px;
+  margin-top: 21px;
   position: relative; }
   .agreement-docs a {
     display: block;
@@ -916,18 +948,20 @@ html {
   .agreement-docs a::before {
     content: "";
     position: absolute;
-    bottom: -4px;
-    left: 0px;
+    bottom: -6px;
+    left: -80px;
     width: 67px;
     height: 60px;
     background: url("../../img/icon-rules.png") no-repeat center;
     background-size: contain; }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .agreement-docs {
     width: 280px; }
     .agreement-docs a {
-      width: 200px; } }
+      width: 200px; }
+    .agreement-docs a::before {
+      left: -7px; } }
 
 .footer {
   padding-top: 67px;
@@ -984,14 +1018,14 @@ html {
   width: 100%;
   height: 143px;
   margin: 0px;
-  padding: 35px;
+  padding: 30px;
   font-family: "MyriadPro Bold", "Helvetica", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 25px;
   text-transform: uppercase;
   background-color: #c5c6c6; }
   .lider-banner_text--spacing {
-    letter-spacing: 7px; }
+    letter-spacing: 6px; }
   .lider-banner_text--plain {
     font-family: "MyriadPro regular", "Helvetica", sans-serif; }
 
@@ -1009,3 +1043,115 @@ html {
 @media (min-width: 634px) and (max-width: 900px) {
   .lider-banner {
     margin-left: auto; } }
+
+.feedback {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -221px;
+  width: 400px;
+  padding: 40px 25px;
+  color: #323232;
+  background-color: #f8f7f4;
+  z-index: 20; }
+
+.feedback-show {
+  display: block;
+  animation: bounce 0.6s; }
+
+.feedback_close {
+  position: absolute;
+  top: 25px;
+  right: 16px;
+  border: none;
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #f8f7f4; }
+
+.feedback_close::before,
+.feedback_close::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 19px;
+  height: 2px;
+  background-color: #070707;
+  border-radius: 1px; }
+
+.feedback_close::before {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+.feedback_close::after {
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+
+.feedback .field {
+  display: block;
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 10px 15px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #d3d3d2; }
+
+.feedback-inner-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 3px;
+  background: #e41d2d;
+  border: none;
+  box-shadow: none; }
+
+.feedback-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.field_checkbox {
+  display: none; }
+
+.field_checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  display: block; }
+
+.field_checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000000; }
+
+.field_checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background: url("../../img/icon-checkbox.png") no-repeat center;
+  background-size: contain; }
+
+.field_checkbox-label a {
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  color: #000000;
+  text-decoration: none; }

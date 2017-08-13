@@ -1,7 +1,7 @@
 .agreement-docs {
-  width: 340px;
+  width: 256px;
   margin: 0 auto;
-  margin-top: 27px;
+  margin-top: 21px;
   position: relative;
   a {
     display: block;
@@ -22,8 +22,8 @@
   a::before {
     content: "";
     position: absolute;
-    bottom: -4px;
-    left: 0px;
+    bottom: -6px;
+    left: -80px;
     width: 67px;
     height: 60px;
     background: url("../../img/icon-rules.png") no-repeat
@@ -32,11 +32,14 @@
   }
 }
 
-@media(min-width: $mobile) {
+@media(min-width: $mobile) and (max-width: 767px){
   .agreement-docs {
     width: 280px;
     a {
       width: 200px;
+    }
+    a::before {
+      left: -7px;
     }
   }
 }
