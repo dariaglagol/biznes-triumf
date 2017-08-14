@@ -1100,7 +1100,7 @@ html {
   line-height: 24px;
   border: 1px solid #d3d3d2; }
 
-.feedback-inner-btn {
+.feedback_inner-btn {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -1114,7 +1114,7 @@ html {
   border: none;
   box-shadow: none; }
 
-.feedback-overlay {
+.feedback_overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -1141,7 +1141,7 @@ html {
   height: 15px;
   border: 1px solid #000000; }
 
-.field_checkbox-label::after {
+.field_checkbox:checked .field_checkbox-label::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -1155,3 +1155,8 @@ html {
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   color: #000000;
   text-decoration: none; }
+
+@media (min-width: 320px) and (max-width: 900px) {
+  .feedback {
+    width: 320px;
+    margin-left: -160px; } }
