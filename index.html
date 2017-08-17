@@ -9,6 +9,19 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script>
+  <!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
 </head>
 <body>
   <header class="header container">
@@ -132,7 +145,18 @@
     <div class="past-event">
      <p class="past-event_text">Как это было в 2016...</p>
       <div class="past-event_inner">
-        <a href="#" class="past-event_link">Смотреть видео</a>
+        <a class="past-event_link fancybox-media"  href="https://www.youtube.com/watch?v=PTiPQKsFeVE">Смотреть видео</a>
+        <script type="text/javascript">
+	$(document).ready(function() {
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+});
+</script>
       </div>
     </div>
     <section class="winners container">
@@ -198,18 +222,18 @@
     </section>
     <section class="sponsor">
       <h2 class="sponsor_header">Организаторы и партнеры премии</h2>
-      <div class="organization owl-carousel owl-theme">
-        <div class="organization_item item">
+      <div class="organization">
+        <div class="organization_item">
          <span class="organization_item-type">Организатор конкурса</span>
          <img src="img/logo-dep.png" alt="Департамент промышленности и развития предпринимательства Томской области" width="86" height="86">
          <p class="organization_item-desc">Департамент промышленности и развития предпринимательства Томской области</p>
         </div>
-        <div class="organization_item item">
+        <div class="organization_item">
          <span class="organization_item-type">Организатор конкурса</span>
          <img src="img/logo-fond-color.png" alt="Департамент промышленности и развития предпринимательства Томской области" width="78" height="102">
          <p class="organization_item-desc">Фонд поддержки<br> малого и среднего бизнеса<br> <span>г.</span> Томск</p>
         </div>
-        <div class="organization_item item">
+        <div class="organization_item">
           <span class="organization_item-type">Генеральный партнер</span>
           <img src="img/logo-prom-bank.png" alt="Промсвязьбанк" width="188" height="98">
           <p class="organization_item-desc"></p></div>
@@ -249,7 +273,7 @@
         <script type="text/javascript">
           VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, color1: '2E1B16', color2: 'FFFFFF', color3: 'FFFFFF'}, 98971680);
         </script-->
-        <img src="img/img-vk.png" alt="" width="499" height="143"> 
+        <img src="img/img-vk.png" alt="" width="499" height="143">
       </article>
       <article class="lider-banner">
         <img src="img/img-lider.jpg" alt="Лидер Томск" width="143" height="143">
