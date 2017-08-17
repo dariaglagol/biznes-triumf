@@ -1,12 +1,13 @@
 .awards-block_header {
   @include headers;
-  padding-top: 81px;
+  padding-top: 83px;
+  margin-left: 23px;
 }
 
 .awards-block_list {
   display: flex;
   justify-content: space-between;
-  width: 800px;
+  width: 810px;
   margin: 0 auto;
 }
 
@@ -14,11 +15,10 @@
   width: 253px;
   position: relative;
   margin: 0px;
-  margin-top: 167px;
+  margin-top: 171px;
   padding: 38px 0px 45px 0px;
-  font-family: $font-plain;
+  font-family: $font-bold;
   font-size: 19px;
-  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   background-color: #e41d2d;
@@ -39,9 +39,9 @@
   }
 
   &--internship::before {
-    top: -96px;
+    top: -99px;
     left: 50%;
-    margin-left: -41px;
+    margin-left: -38px;
     width: 83px;
     height: 63px;
     background: url("../img/icon-hand.png") center no-repeat;
@@ -60,6 +60,7 @@
 
 @media(min-width:$mobile) and (max-width: 767px){
   .awards-block_header {
+    margin-left: 0px;
     padding-top: 60px;
     letter-spacing: 0px;
   }

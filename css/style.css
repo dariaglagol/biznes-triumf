@@ -57,44 +57,23 @@ html {
   position: relative;
   width: 475px;
   margin: 0 auto;
-  margin-top: 287px;
-  padding-left: 157px;
+  margin-top: 295px;
   text-transform: uppercase;
   color: #ffffff; }
 
-.header_title::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: -23px;
-  width: 155px;
-  height: 155px;
-  background: url("../img/logo-triumf-white.png") center no-repeat;
-  background-size: contain; }
-
-.header_title > h1 {
-  margin: 0px;
-  text-align: center;
-  font-family: "FreeSetExtraCTT", "Helvetica", sans-serif;
-  font-weight: 900;
-  font-size: 63px;
-  line-height: 57px; }
-
-.header_title > span {
-  padding-left: 13px;
-  font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-weight: 300;
-  font-size: 66px;
-  line-height: 53px; }
+.header_title > img {
+  margin-left: -21px; }
 
 .header_desc {
-  margin-top: 28px;
+  margin-left: 18px;
+  margin-top: 27px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   font-size: 26px;
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .header_call {
   width: 749px;
@@ -115,6 +94,7 @@ html {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
+    background-position: center;
     padding-top: 20px;
     box-shadow: 768px 800px 0px 0px rgba(0, 0, 0, 0.6) inset; }
   .header_logo-block {
@@ -122,17 +102,10 @@ html {
   .header_title {
     width: 300px;
     margin-top: 100px;
-    padding-top: 170px;
-    padding-left: 0px; }
-  .header_title::before {
-    left: 50%;
-    margin-left: -77px; }
-  .header_title > h1,
-  .header_title > span {
-    font-size: 48px;
-    line-height: 50px; }
-  .header_title > span {
-    padding-left: 32px; }
+    text-align: center; }
+    .header_title img {
+      width: 280px;
+      height: 85px; }
   .header_desc {
     font-size: 16px;
     line-height: 24px; }
@@ -141,6 +114,8 @@ html {
     font-size: 20px; } }
 
 @media (min-width: 768px) and (max-width: 900px) {
+  .header {
+    background-position: center; }
   .header_call {
     width: 685px; } }
 
@@ -169,26 +144,7 @@ html {
   font-size: 16px; }
 
 .logo--biz-triumf-bottom {
-  position: relative;
-  padding-left: 75px; }
-  .logo--biz-triumf-bottom p {
-    margin: 5px 0;
-    font-family: "MyriadPro regular", "Helvetica", sans-serif;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 20px;
-    color: #c5c6c6;
-    text-transform: uppercase; }
-
-.logo--biz-triumf-bottom::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 3px;
-  width: 65px;
-  height: 65px;
-  background: url("../../img/logo-triumf-grey.png") no-repeat center;
-  background-size: contain; }
+  margin-top: 23px; }
 
 .logo--biz-triumf-bottom p:nth-child(2) {
   margin: 0 auto;
@@ -222,8 +178,8 @@ html {
     margin: 0 auto;
     margin-bottom: 30px; }
     .logo--biz-triumf-bottom img {
-      width: 150px;
-      height: 80px; }
+      width: 280px;
+      height: 50px; }
   .logo--biz-triumf-bottom::before {
     top: 9px; } }
 
@@ -231,7 +187,7 @@ html {
   .logo--fond img {
     width: 91px;
     height: 116px;
-    margin-right: -4px; }
+    margin-right: -14px; }
   .logo_contacts {
     font-size: 13px; }
   .logo--biz-triumf > img {
@@ -246,30 +202,30 @@ html {
 .awards-block_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  padding-top: 81px; }
+  letter-spacing: 9px;
+  padding-top: 83px;
+  margin-left: 23px; }
 
 .awards-block_list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 800px;
+  width: 810px;
   margin: 0 auto; }
 
 .awards-block_item {
   width: 253px;
   position: relative;
   margin: 0px;
-  margin-top: 167px;
+  margin-top: 171px;
   padding: 38px 0px 45px 0px;
-  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-family: "MyriadPro Bold", "Helvetica", sans-serif;
   font-size: 19px;
-  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   background-color: #e41d2d;
@@ -285,9 +241,9 @@ html {
     background: url("../img/icon-cup.png") center no-repeat;
     background-size: contain; }
   .awards-block_item--internship::before {
-    top: -96px;
+    top: -99px;
     left: 50%;
-    margin-left: -41px;
+    margin-left: -38px;
     width: 83px;
     height: 63px;
     background: url("../img/icon-hand.png") center no-repeat;
@@ -302,6 +258,7 @@ html {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .awards-block_header {
+    margin-left: 0px;
     padding-top: 60px;
     letter-spacing: 0px; }
   .awards-block_list {
@@ -322,35 +279,34 @@ html {
 .conditions_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  padding-top: 99px;
-  padding-left: 20px;
-  padding-right: 8px;
+  letter-spacing: 9px;
+  padding-top: 98px;
+  padding-left: 30px;
+  padding-right: 11px;
   background-color: #c5c6c6;
   position: relative;
   z-index: 1;
-  width: 457px;
+  width: 440px;
   margin: 0 auto; }
 
 .conditions-inner {
   margin: 0;
   margin-top: -10px;
   padding-top: 45px;
-  padding-bottom: 140px;
+  padding-bottom: 149px;
   border-top: 3px solid #000000; }
 
 .conditions_item {
-  width: 438px;
+  width: 425px;
   margin: 0 auto;
-  padding-bottom: 31px;
-  font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 900;
+  padding-bottom: 25px;
+  font-family: "MyriadPro Bold", "Helvetica", sans-serif;
+  font-size: 21px;
+  line-height: 27px;
   text-transform: uppercase; }
   .conditions_item span {
     font-family: "MyriadPro regular", "Helvetica", sans-serif;
@@ -377,43 +333,49 @@ html {
 .btn-block_item {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   z-index: 1;
   display: block;
   width: 529px;
   margin: 0 auto;
   margin-top: -59px;
   padding: 40px 0;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 800;
   color: #ffffff;
   background-color: #e41d2d;
-  border: none;
-  box-shadow: none; }
+  text-decoration: none; }
+
+.btn-block_item:hover {
+  background-color: #DF0C11; }
+
+.btn-block_item:active {
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3) inset; }
 
 .btn-block_text {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   padding-top: 25px;
-  font-family: "MyriadPro Bold", "Helvetica", sans-serif;
-  font-size: 17px;
+  padding-left: 12px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 900;
-  letter-spacing: 6px; }
+  letter-spacing: 5px; }
   .btn-block_text span {
     text-transform: lowercase; }
   .btn-block_text--grey {
-    padding-top: 78px; }
+    padding-top: 78px;
+    color: #ffffff; }
 
 .btn-block--grey {
   position: relative;
@@ -459,18 +421,22 @@ html {
   margin: 0px;
   padding: 19px 0;
   font-family: "MyriadPro Bold", "Helvetica", sans-serif;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 17px;
+  line-height: 17px;
   text-align: center;
   text-transform: uppercase;
   background-color: #c5c6c6; }
 
 .counter-wrap_count {
+  padding: 21px 0;
+  padding-bottom: 17px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   font-weight: 900;
   color: #ffffff;
   background-color: #2e1b16;
   text-transform: lowercase; }
+  .counter-wrap_count span {
+    font-size: 15px; }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .counter-wrap {
@@ -492,12 +458,12 @@ html {
 .nominations_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  font-size: 27px;
+  letter-spacing: 9px;
+  margin-left: 20px;
   color: #ffffff; }
 
 .nominations_list {
@@ -536,17 +502,17 @@ html {
 .nominations_desc {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   color: #ffffff;
   width: 580px;
   margin: 0 auto;
-  margin-top: 56px;
-  font-size: 14px;
-  line-height: 21px;
+  margin-top: 57px;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 8px; }
 
 .nominations_docs {
@@ -604,17 +570,17 @@ html {
 
 .steps {
   padding-top: 87px;
-  padding-bottom: 112px;
+  padding-bottom: 116px;
   background-color: #c5c6c6; }
 
 .steps_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   width: 503px;
   margin: 0 auto;
   padding-left: 20px;
@@ -745,11 +711,11 @@ html {
 .past-event_text {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   font-weight: 900; }
 
 .past-event {
@@ -802,15 +768,18 @@ html {
 .winners_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
+  font-family: "MyriadPro Bold", "Helvetica", sans-serif;
+  font-size: 26px;
+  padding-left: 21px;
   padding-bottom: 53px; }
 
 .winners {
-  padding-top: 94px;
+  padding-top: 99px;
   padding-bottom: 51px;
   background-color: #1d0000;
   color: #ffffff; }
@@ -877,11 +846,11 @@ html {
 .sponsor_header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   padding-bottom: 28px;
   font-size: 16px;
   line-height: 18px;
@@ -929,16 +898,16 @@ html {
 .agreement-docs {
   width: 256px;
   margin: 0 auto;
-  margin-top: 21px;
+  margin-top: 18px;
   position: relative; }
   .agreement-docs a {
     display: block;
     width: 255px;
     margin-left: auto;
     text-align: center;
-    padding: 17px 0px;
-    font-family: "MyriadPro regular", "Helvetica", sans-serif;
-    font-size: 16px;
+    padding: 19px 0px;
+    font-family: "MyriadPro Bold", "Helvetica", sans-serif;
+    font-size: 17px;
     line-height: 18px;
     font-weight: 900;
     color: #1d0000;
@@ -982,7 +951,7 @@ html {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 72px;
+  padding-top: 57px;
   padding-bottom: 40px; }
   .footer_logos .logo--fond {
     margin-top: -31px; }
@@ -995,7 +964,11 @@ html {
   .footer_logos {
     padding-top: 40px; }
     .footer_logos .logo_contacts {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .vk-vidget img {
+    width: 280px;
+    height: 82px;
+    margin-bottom: 25px; } }
 
 @media (min-width: 634px) {
   .footer_logos .logo--fond {
@@ -1025,7 +998,7 @@ html {
   text-transform: uppercase;
   background-color: #c5c6c6; }
   .lider-banner_text--spacing {
-    letter-spacing: 6px; }
+    letter-spacing: 5px; }
   .lider-banner_text--plain {
     font-family: "MyriadPro regular", "Helvetica", sans-serif; }
 
@@ -1160,3 +1133,107 @@ html {
   .feedback {
     width: 320px;
     margin-left: -160px; } }
+
+input,
+select,
+button {
+  display: block;
+  margin: 0 auto; }
+
+.form-background {
+  background-color: #f0f0f0; }
+
+.form-header {
+  margin: 0px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.reg,
+.reg-ext {
+  padding-bottom: 45px; }
+
+.reg label,
+.reg-ext label,
+.reg_sex-desc {
+  display: block;
+  text-align: center;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.reg input,
+.reg-ext input {
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: 2px solid #44080d;
+  box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset; }
+
+.reg_sex-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto; }
+  .reg_sex-block .reg_sex-desc {
+    width: 280px; }
+  .reg_sex-block label {
+    display: inline;
+    margin-bottom: 20px;
+    position: relative; }
+  .reg_sex-block label:nth-of-type(2) {
+    margin-right: 32px; }
+  .reg_sex-block input {
+    display: none; }
+  .reg_sex-block input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -26px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid black; }
+  .reg_sex-block input[type="radio"]:checked + label:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -24px;
+    width: 10px;
+    height: 10px;
+    background-color: black; }
+
+select {
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
+  background-color: #fff;
+  border: 2px solid black; }
+
+button {
+  width: 200px;
+  margin-top: 40px;
+  padding: 10px 15px;
+  background-color: #e41d2d;
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none; }

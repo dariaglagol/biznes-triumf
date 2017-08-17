@@ -17,48 +17,25 @@
   position: relative;
   width: 475px;
   margin: 0 auto;
-  margin-top: 287px;
-  padding-left: 157px;
+  margin-top: 295px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.header_title::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: -23px;
-  width: 155px;
-  height: 155px;
-  background: url("../img/logo-triumf-white.png") center no-repeat;
-  background-size: contain;
-}
-
-.header_title > h1 {
-  margin: 0px;
-  text-align: center;
-  font-family: $font-header-bold;
-  font-weight: 900;
-  font-size: 63px;
-  line-height: 57px;
-}
-
-.header_title > span {
-  padding-left: 13px;
-  font-family: $font-plain;
-  font-weight: 300;
-  font-size: 66px;
-  line-height: 53px;
+.header_title > img{
+  margin-left: -21px;
 }
 
 .header_desc {
-  margin-top: 28px;
+  margin-left: 18px;
+  margin-top: 27px;
   font-family: $font-plain;
   font-size: 26px;
   line-height: 30px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header_call {
@@ -82,6 +59,7 @@
 
 @media(min-width: $mobile) and (max-width:767px) {
   .header {
+    background-position: center;
     padding-top: 20px;
     box-shadow: 768px 800px 0px 0px rgba(0, 0, 0, 0.6) inset;
   }
@@ -91,20 +69,11 @@
   .header_title {
     width: 300px;
     margin-top: 100px;
-    padding-top: 170px;
-    padding-left: 0px;
-  }
-  .header_title::before {
-    left: 50%;
-    margin-left: -77px;
-  }
-  .header_title > h1,
-  .header_title > span {
-    font-size: 48px;
-    line-height: 50px;
-  }
-  .header_title > span {
-    padding-left: 32px;
+    text-align: center;
+    img {
+      width: 280px;
+      height: 85px;
+    }
   }
   .header_desc {
     font-size: 16px;
@@ -117,6 +86,9 @@
 }
 
 @media(min-width:$tablet) and (max-width: 900px) {
+  .header {
+    background-position: center;
+  }
   .header_call {
     width: 685px;
   } 

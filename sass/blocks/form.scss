@@ -1,0 +1,109 @@
+input,
+select,
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-background {
+  background-color: rgb(240, 240, 240);
+}
+
+.form-header {
+  @include headers;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.reg,
+.reg-ext{
+  padding-bottom: 45px;
+}
+
+.reg label,
+.reg-ext label,
+.reg_sex-desc{
+  display: block;
+  text-align: center;
+  font-family: $font-plain;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.reg input,
+.reg-ext input {
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-family: $font-plain;
+  font-size: 14px;
+  line-height: 18px;
+  border: 2px solid #44080d;
+  box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
+}
+
+.reg_sex-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  .reg_sex-desc {
+    width: 280px;
+  }
+  label {
+    display: inline;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  label:nth-of-type(2) {
+    margin-right: 32px;
+  }
+  input {
+    display: none;
+  }
+  input[type="radio"] + label:before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -26px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+  }
+  input[type="radio"]:checked + label:after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -24px;
+    width: 10px;
+    height: 10px;
+    background-color: black;;
+  }
+}
+
+select {
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-family: $font-plain;
+  box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+button {
+  width: 200px;
+  margin-top: 40px;
+  padding: 10px 15px;
+  background-color: #e41d2d;
+  font-family: $font-plain;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+}

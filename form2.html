@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бизнес-Триумф: регистрация</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-background">
+<header>
+  <h1 class="form-header">Регистрация участника Бизнес-триумфа</h1>
+</header>
+<main>
+  <form action="post" class="reg-ext">
+    <label for="org-form">Организационно-правовая форма СМСП: </label>
+    <input type="text" id="org-form" name="org-form" placeholder="ИП, ООО, ОАО и т.д." required="" autofocus>
+    <label for="org-name">Наименование субъекта МСП:</label>
+    <input type="text" id="org-name" name="org-name" placeholder="Введите название вашей организации" required="">
+    <label for="org-sphere">Сфера деятельности:</label>
+    <input type="text" id="org-sphere" name="org-sphere" placeholder="Укажите сферу деятельности компании" required="">
+    <label for="org-registration-date">Дата государственной регистрации СМСП: </label>
+    <input type="text" id="org-registration-date" name="org-registration-date" placeholder="дд.мм.гггг" required="">
+   <label for="org-code-of-reason">КПП: </label>
+   <input type="text" id="org-code-of-reason" name="org-code-of-reason" required>
+   <label for="org-individual tax-num">ИНН: </label>
+   <input type="text" id="org-individual-tax-num" name="org-individual-tax-num" required="">
+   <label for="org-state-registration-number">ОГРН: </label>
+   <input type="text" id="org-state-registration-number" name="org-state-registration-number" required="">
+   <label for="org-activity-classifier">ОКВЭД: </label><input type="text" id="org-activity-classifier" name="org-activity-classifier" required="">
+   <label for="org-legal-adress">Юридический адрес организации: </label>
+   <input type="text" id="org-legal-adress" name="org-legal-adress" required="">
+   <label for="org-fact-adress">Фактический адрес: </label><input type="text" id="org-fact-adress" name="org-fact-adress" required="">
+   <label for="org-phone">Телефон организации: </label>
+   <input type="tel" id="org-phone" name="org-phone" required="">
+   <label for="org-email">E-mail организации: </label><input type="email" id="org-email" name="org-email" required="">
+   <label for="org-url">Сайт организации: </label>
+   <input type="url" id="org-url" name="org-url" required="">
+   <label for="org-stuff">Количество сотрудников организации^   </label>
+   <input type="text" id="org-stuff" name="org-stuff" required="">
+   <label for="org-profit">Прибыль организации за 2015, 2016, 2017 год (для субъектов 2, 3, 4 номинаций конкурса).
+Прибыль организации за 1кв.2017, за 2 кв. 2017 – для 1 номинации: </label>
+      <input type="text" id="org-profit" name="org-profit" required="">
+      <label for="org-teritory">Территория деятельности организации: </label>
+      <select id="teritory" name="teritory" required="">
+       <option value="г. Томск и ТО">г . Томск и ТО</option>
+       <option value="РФ">Российская Федерация</option>
+       <option value="За пределами РФ">За пределами РФ</option>
+      </select>
+   <label for="org-share">Доля участника в уставном капитале субъекта МСП (для обществ с ограниченной ответственностью): </label>
+   <input type="text" id="org-share" name="org-share" required="">
+   <button type="submit">Отправить</button>
+  </form>
+</main>
+<footer class="footer container">
+  <section class="footer_for-user">
+      <article class="vk-vidget">
+        <!--script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script-->
+
+        <!-- VK Widget -->
+        <!--div id="vk_groups"></div>
+        <script type="text/javascript">
+          VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, color1: '2E1B16', color2: 'FFFFFF', color3: 'FFFFFF'}, 98971680);
+        </script-->
+        <img src="img/img-vk.png" alt="" width="499" height="143">
+      </article>
+      <article class="lider-banner">
+        <img src="img/img-lider.jpg" alt="Лидер Томск" width="143" height="143">
+        <p class="lider-banner_text"><span class="lider-banner_text--spacing">29 ноября <span class="lider-banner_text--plain">Томск</span></span><br>
+        III региональный форум<br>
+        Молодых предпринимателей</p>
+      </article>
+    </section>
+    <section class="footer_logos">
+      <div class="logo logo--biz-triumf-bottom">
+        <img src="img/logo-bottom.png" alt="" width="390">
+      </div>
+    <div class="logo logo--fond">
+      <div class="logo_contacts">
+          <p class="logo_phone">+7 3822 902 984</p>
+          <a href="mailto:info@biznestriumf.ru" class="logo_mail">info@biznestriumf.ru</a>
+          <a href="http://fondtomsk.ru/" class="logo_site">www.fondtomsk.ru</a>
+      </div>
+        <img src="img/logo-fond.png" alt="Фонд развития предпринимательства" width="80" height="110">
+    </div>
+    </section>
+</footer>
+</body>
+</html>

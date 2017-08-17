@@ -13,19 +13,24 @@
   margin: 0px;
   padding: 19px 0;
   font-family: $font-bold;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 17px;
+  line-height: 17px;
   text-align: center;
   text-transform: uppercase;
   background-color: #c5c6c6;
 }
 
 .counter-wrap_count {
+  padding: 21px 0;
+  padding-bottom: 17px;
   font-family: $font-plain;
   font-weight: 900;
   color: #ffffff;
   background-color: #2e1b16;
   text-transform: lowercase;
+  span {
+    font-size: 15px;
+  }
 }
 
 @media(min-width:$mobile) and (max-width:767px){
