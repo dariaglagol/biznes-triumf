@@ -774,6 +774,31 @@ html {
 .past-event_video--show {
   display: block; }
 
+@media (max-width: 360px) {
+  .past-event_video iframe {
+    width: 280px;
+    height: 158px; } }
+
+@media (max-width: 470px) {
+  .past-event_video iframe {
+    width: 320px;
+    height: 180px; } }
+
+@media (max-width: 680px) {
+  .past-event_video iframe {
+    width: 540px;
+    height: 360px; } }
+
+@media (max-width: 900px) {
+  .past-event_video iframe {
+    width: 853px;
+    height: 480px; } }
+
+@media (min-width: 1440px) {
+  .past-event_video iframe {
+    width: 1280px;
+    height: 720px; } }
+
 @media (min-width: 320px) and (max-width: 900px) {
   .past-event_inner {
     width: 280px; }
