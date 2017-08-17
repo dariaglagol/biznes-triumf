@@ -1134,12 +1134,6 @@ html {
     width: 320px;
     margin-left: -160px; } }
 
-input,
-select,
-button {
-  display: block;
-  margin: 0 auto; }
-
 .form-background {
   background-color: #f0f0f0; }
 
@@ -1158,6 +1152,35 @@ button {
 .reg,
 .reg-ext {
   padding-bottom: 45px; }
+  .reg input,
+  .reg select,
+  .reg button,
+  .reg-ext input,
+  .reg-ext select,
+  .reg-ext button {
+    display: block;
+    margin: 0 auto; }
+  .reg select,
+  .reg-ext select {
+    width: 280px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-family: "MyriadPro regular", "Helvetica", sans-serif;
+    box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
+    background-color: #fff;
+    border: 2px solid black; }
+  .reg button,
+  .reg-ext button {
+    width: 200px;
+    margin-top: 40px;
+    padding: 10px 15px;
+    background-color: #e41d2d;
+    font-family: "MyriadPro regular", "Helvetica", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none; }
 
 .reg label,
 .reg-ext label,
@@ -1216,24 +1239,3 @@ button {
     width: 10px;
     height: 10px;
     background-color: black; }
-
-select {
-  width: 280px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-  font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
-  background-color: #fff;
-  border: 2px solid black; }
-
-button {
-  width: 200px;
-  margin-top: 40px;
-  padding: 10px 15px;
-  background-color: #e41d2d;
-  font-family: "MyriadPro regular", "Helvetica", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  border: none; }
