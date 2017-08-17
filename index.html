@@ -9,19 +9,19 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script>
-  <!-- Add jQuery library -->
+  <!--Add jQuery library>
 <script type="text/javascript" src="fancybox/lib/jquery-3.2.1.min.js"></script>
 
-<!-- Add mousewheel plugin (this is optional) -->
+<Add mousewheel plugin (this is optional)>
 <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
-<!-- Add fancyBox -->
+< Add fancyBox>
 <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
 <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
 
-<!-- Optionally add helpers - button, thumbnail and/or media -->
+< Optionally add helpers - button, thumbnail and/or media >
 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script-->
 </head>
 <body>
   <header class="header container">
@@ -145,7 +145,11 @@
     <div class="past-event">
      <p class="past-event_text">Как это было в 2016...</p>
       <div class="past-event_inner">
-        <a class="fancybox-media past-event_link"  href="https://www.youtube.com/watch?v=PTiPQKsFeVE">Смотреть видео</a>
+        <a class="past-event_link"  href="#video">Смотреть видео</a>
+        <div class="past-event_video">
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/PTiPQKsFeVE" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="past-event_overlay"></div>
       </div>
     </div>
     <section class="winners container">
@@ -299,20 +303,10 @@
           <div class="feedback_overlay"></div>
     </div-->
   </footer>
+  <script src="js/video.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.js"></script>
-  <script>
-	 $(document).ready(function() {
-        $('.fancybox-media').fancybox({
-		      openEffect  : 'none',
-		      closeEffect : 'none',
-		      helpers : {
-			     media : {}
-		      }
-        });
-   });
-  </script>
   <script>
     $('.owl-carousel').owlCarousel({
     loop:true,
