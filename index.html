@@ -10,18 +10,26 @@
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script>
   <!-- Add jQuery library -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<!-- Add mousewheel plugin (this is optional) -->
-<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" srс="fancybox/lib/jquery-1.10.2.min"></script>
 
 <!-- Add fancyBox -->
-<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
-<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
 
 <!-- Optionally add helpers - button, thumbnail and/or media -->
-<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+});
+</script>
 </head>
 <body>
   <header class="header container">
@@ -146,17 +154,6 @@
      <p class="past-event_text">Как это было в 2016...</p>
       <div class="past-event_inner">
         <a class="past-event_link fancybox-media"  href="https://www.youtube.com/watch?v=PTiPQKsFeVE">Смотреть видео</a>
-        <script type="text/javascript">
-	$(document).ready(function() {
-	$('.fancybox-media').fancybox({
-		openEffect  : 'none',
-		closeEffect : 'none',
-		helpers : {
-			media : {}
-		}
-	});
-});
-</script>
       </div>
     </div>
     <section class="winners container">
@@ -295,7 +292,7 @@
         <img src="img/logo-fond.png" alt="Фонд развития предпринимательства" width="80" height="110">
     </div>
     </section>
-    <div class="feedback" id="feedback-link">
+    <!--div class="feedback" id="feedback-link">
           <div class="feedback_preform">
             <button class="feedback_close" title="Закрыть" type="button"></button>
           </div>
@@ -308,7 +305,7 @@
             <button class="feedback_inner-btn" type="button" value="Отправить">Отправить</button>
           </form>
           <div class="feedback_overlay"></div>
-    </div>
+    </div-->
   </footer>
   <script src="js/counter.js"></script>
   <script src="js/jquery.min.js"></script>
