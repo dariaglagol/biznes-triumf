@@ -1194,7 +1194,7 @@ html {
     width: 320px;
     margin-left: -160px; } }
 
-.form-background {
+.form--background {
   background-color: #f0f0f0; }
 
 .form-head-block {
@@ -1276,7 +1276,7 @@ html {
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  border: 1px solid #44080d;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset; }
 
 .reg_sex-block {
@@ -1315,6 +1315,9 @@ html {
     width: 10px;
     height: 10px;
     background-color: #2e1b16; }
+
+.form .footer {
+  padding-top: 0px; }
 
 @media (max-width: 700px) {
   .form-header {
