@@ -981,7 +981,7 @@ html {
     left: -80px;
     width: 67px;
     height: 60px;
-    background: url("../../img/icon-rules.png") no-repeat center;
+    background: url("../img/icon-rules.png") no-repeat center;
     background-size: contain; }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1181,7 +1181,7 @@ html {
   left: 0px;
   width: 15px;
   height: 15px;
-  background: url("../../img/icon-checkbox.png") no-repeat center;
+  background: url("../img/icon-checkbox.png") no-repeat center;
   background-size: contain; }
 
 .field_checkbox-label a {
