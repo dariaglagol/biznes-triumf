@@ -5,6 +5,7 @@
   padding-bottom: 20px;
   background-position: center 0px;
   background-repeat: no-repeat;
+  box-shadow: 2500px 1980px 0px 0px rgba(0, 0, 0, 0.5) inset;
 }
 
 .header_logo-block {
@@ -61,7 +62,6 @@
   .header {
     background-position: center;
     padding-top: 20px;
-    box-shadow: 768px 800px 0px 0px rgba(0, 0, 0, 0.6) inset;
   }
   .header_logo-block {
     padding-top: 20px;
@@ -91,5 +91,5 @@
   }
   .header_call {
     width: 685px;
-  } 
-} 
+  }
+}

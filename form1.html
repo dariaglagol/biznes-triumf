@@ -9,7 +9,20 @@
 </head>
 <body class="form-background">
 <header>
-  <h1 class="form-header">Регистрация участника Бизнес-триумфа</h1>
+    <div class="form-head-block container">
+      <div class="logo logo--biz-triumf">
+       <img src="img/logo-triumf-top.png" alt="Бизнес-Триумф, региональная премия в области моодежного предпринимательства">
+      </div>
+      <h1 class="form-header">Регистрация участника Бизнес-триумфа</h1>
+      <div class="logo logo--fond">
+        <div class="logo_contacts">
+          <p class="logo_phone">+7 3822 902 984</p>
+          <a href="mailto:info@biznestriumf.ru" class="logo_mail">info@biznestriumf.ru</a>
+          <a href="http://fondtomsk.ru/" class="logo_site">www.fondtomsk.ru</a>
+        </div>
+        <img src="img/logo-fond.png" alt="Фонд развития предпринимательства">
+      </div>
+    </div>
 </header>
 <main>
   <form action="post" class="reg">
@@ -34,33 +47,15 @@
        <option value="Битва титанов">«Битва титанов»</option>
       </select>
    <label for="phone">Контактный телефон: </label>
-   <input type="text" id="phone" name="phone" placeholder="+7 999 999 99 99" required>
+   <input type="text" id="phone" name="phone" placeholder="+7 999 999 99 99" required="">
    <label for="email">Контактный e-mail:</label>
-   <input type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+   <input type="email" id="email" name="email" placeholder="Ваш e-mail" required="">
    <label for="institution">Наименование учебного заведения:</label>
   <input type="text" id="institution" name="institution" required="">
    <button type="submit">Далее</button>
   </form>
 </main>
 <footer class="footer container">
-  <section class="footer_for-user">
-      <article class="vk-vidget">
-        <!--script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script-->
-
-        <!-- VK Widget -->
-        <!--div id="vk_groups"></div>
-        <script type="text/javascript">
-          VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, color1: '2E1B16', color2: 'FFFFFF', color3: 'FFFFFF'}, 98971680);
-        </script-->
-        <img src="img/img-vk.png" alt="" width="499" height="143">
-      </article>
-      <article class="lider-banner">
-        <img src="img/img-lider.jpg" alt="Лидер Томск" width="143" height="143">
-        <p class="lider-banner_text"><span class="lider-banner_text--spacing">29 ноября <span class="lider-banner_text--plain">Томск</span></span><br>
-        III региональный форум<br>
-        Молодых предпринимателей</p>
-      </article>
-    </section>
     <section class="footer_logos">
       <div class="logo logo--biz-triumf-bottom">
         <img src="img/logo-bottom.png" alt="" width="390">

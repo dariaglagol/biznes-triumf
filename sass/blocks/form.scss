@@ -2,11 +2,21 @@
   background-color: rgb(240, 240, 240);
 }
 
+.form-head-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #2e1b16;
+}
+
 .form-header {
   @include headers;
   width: 400px;
   margin: 0 auto;
   margin-bottom: 40px;
+  color: #fff;
 }
 
 .reg,
@@ -25,12 +35,12 @@
     font-family: $font-plain;
     box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
     background-color: #fff;
-    border: 2px solid black;
+    border: 1px solid #2e1b16;;
   }
   button {
-    width: 200px;
+    width: 280px;
     margin-top: 40px;
-    padding: 10px 15px;
+    padding: 13px 15px;
     background-color: #e41d2d;
     font-family: $font-plain;
     font-weight: bold;
@@ -38,6 +48,12 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
+  }
+  button:hover {
+    background-color: #cd1a28;
+  }
+  button:active {
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3) inset;
   }
 }
 
@@ -49,7 +65,6 @@
   font-family: $font-plain;
   font-size: 16px;
   line-height: 24px;
-  text-transform: uppercase;
 }
 
 .reg input,
@@ -60,7 +75,7 @@
   font-family: $font-plain;
   font-size: 14px;
   line-height: 18px;
-  border: 2px solid #44080d;
+  border: 1px solid #44080d;
   box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
 }
 
@@ -92,7 +107,7 @@
     right: -26px;
     width: 14px;
     height: 14px;
-    border: 1px solid black;
+    border: 1px solid #2e1b16;;
   }
   input[type="radio"]:checked + label:after{
     content: "";
@@ -101,6 +116,43 @@
     right: -24px;
     width: 10px;
     height: 10px;
-    background-color: black;;
+    background-color: #2e1b16;
+  }
+}
+
+@media(max-width: 700px) {
+  .form-header {
+    width: 301px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media(max-width:608px) {
+  .form-head-block {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    .logo--biz-triumf {
+      order: 1;
+    }
+    .logo--fond {
+      order: 2;
+      flex-direction: row;
+    }
+    .form-header {
+      order: 3;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+    .form-head-block {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    .logo--fond {
+      order: 2;
+      flex-direction: column-reverse;
+    }
   }
 }

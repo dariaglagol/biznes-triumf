@@ -45,11 +45,7 @@
 
 .past-event_video {
   display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -436px;
-  margin-top: -240px;
+  position: relative;
   z-index: 20;
 }
 
@@ -65,39 +61,42 @@
 }
 
 .past-event_video--show {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  animation: fadeInDownBig 0.6s;
 }
 
 @media(max-width: 360px) {
-  .past-event_video iframe {
+  .past-event_video {
     width: 280px;
     height: 158px;
   }
 }
 
-@media(max-width: 470px) {
-  .past-event_video iframe {
+@media(min-width: 470px) {
+  .past-event_video {
     width: 320px;
     height: 180px;
   }
 }
 
-@media(max-width: 680px) {
-  .past-event_video iframe {
+@media(min-width: 680px) {
+  .past-event_video  {
     width: 540px;
     height: 360px;
   }
 }
 
-@media(max-width: 900px) {
-  .past-event_video iframe {
+@media(min-width: 900px) {
+  .past-event_video {
     width: 853px;
     height: 480px;
   }
 }
 
 @media(min-width: 1440px) {
-  .past-event_video iframe {
+  .past-event_video {
     width: 1280px;
     height: 720px;
   }
@@ -122,4 +121,20 @@
     font-size: 20px;
     letter-spacing: 2px;
   }
+}
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDownBig {
+  animation-name: fadeInDownBig;
 }

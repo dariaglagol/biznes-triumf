@@ -44,7 +44,8 @@ html {
   padding-top: 0px;
   padding-bottom: 20px;
   background-position: center 0px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  box-shadow: 2500px 1980px 0px 0px rgba(0, 0, 0, 0.5) inset; }
 
 .header_logo-block {
   display: -ms-flexbox;
@@ -95,8 +96,7 @@ html {
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
     background-position: center;
-    padding-top: 20px;
-    box-shadow: 768px 800px 0px 0px rgba(0, 0, 0, 0.6) inset; }
+    padding-top: 20px; }
   .header_logo-block {
     padding-top: 20px; }
   .header_title {
@@ -352,7 +352,7 @@ html {
   text-decoration: none; }
 
 .btn-block_item:hover {
-  background-color: #DF0C11; }
+  background-color: #cd1a28; }
 
 .btn-block_item:active {
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3) inset; }
@@ -754,11 +754,7 @@ html {
 
 .past-event_video {
   display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -436px;
-  margin-top: -240px;
+  position: relative;
   z-index: 20; }
 
 .past-event_overlay {
@@ -772,30 +768,36 @@ html {
   background: rgba(0, 0, 0, 0.7); }
 
 .past-event_video--show {
-  display: block; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  animation: fadeInDownBig 0.6s; }
 
 @media (max-width: 360px) {
-  .past-event_video iframe {
+  .past-event_video {
     width: 280px;
     height: 158px; } }
 
-@media (max-width: 470px) {
-  .past-event_video iframe {
+@media (min-width: 470px) {
+  .past-event_video {
     width: 320px;
     height: 180px; } }
 
-@media (max-width: 680px) {
-  .past-event_video iframe {
+@media (min-width: 680px) {
+  .past-event_video {
     width: 540px;
     height: 360px; } }
 
-@media (max-width: 900px) {
-  .past-event_video iframe {
+@media (min-width: 900px) {
+  .past-event_video {
     width: 853px;
     height: 480px; } }
 
 @media (min-width: 1440px) {
-  .past-event_video iframe {
+  .past-event_video {
     width: 1280px;
     height: 720px; } }
 
@@ -811,6 +813,17 @@ html {
   .past-event_text {
     font-size: 20px;
     letter-spacing: 2px; } }
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInDownBig {
+  animation-name: fadeInDownBig; }
 
 .winners_header {
   margin: 0px;
@@ -1184,6 +1197,16 @@ html {
 .form-background {
   background-color: #f0f0f0; }
 
+.form-head-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #2e1b16; }
+
 .form-header {
   margin: 0px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
@@ -1194,7 +1217,8 @@ html {
   letter-spacing: 9px;
   width: 400px;
   margin: 0 auto;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  color: #fff; }
 
 .reg,
 .reg-ext {
@@ -1215,12 +1239,12 @@ html {
     font-family: "MyriadPro regular", "Helvetica", sans-serif;
     box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset;
     background-color: #fff;
-    border: 2px solid black; }
+    border: 1px solid #2e1b16; }
   .reg button,
   .reg-ext button {
-    width: 200px;
+    width: 280px;
     margin-top: 40px;
-    padding: 10px 15px;
+    padding: 13px 15px;
     background-color: #e41d2d;
     font-family: "MyriadPro regular", "Helvetica", sans-serif;
     font-weight: bold;
@@ -1228,6 +1252,12 @@ html {
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none; }
+  .reg button:hover,
+  .reg-ext button:hover {
+    background-color: #cd1a28; }
+  .reg button:active,
+  .reg-ext button:active {
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3) inset; }
 
 .reg label,
 .reg-ext label,
@@ -1236,8 +1266,7 @@ html {
   text-align: center;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase; }
+  line-height: 24px; }
 
 .reg input,
 .reg-ext input {
@@ -1247,7 +1276,7 @@ html {
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  border: 2px solid #44080d;
+  border: 1px solid #44080d;
   box-shadow: 0px 0px 3px #ccc, 0 7px 13px #eee inset; }
 
 .reg_sex-block {
@@ -1277,7 +1306,7 @@ html {
     right: -26px;
     width: 14px;
     height: 14px;
-    border: 1px solid black; }
+    border: 1px solid #2e1b16; }
   .reg_sex-block input[type="radio"]:checked + label:after {
     content: "";
     position: absolute;
@@ -1285,4 +1314,39 @@ html {
     right: -24px;
     width: 10px;
     height: 10px;
-    background-color: black; }
+    background-color: #2e1b16; }
+
+@media (max-width: 700px) {
+  .form-header {
+    width: 301px;
+    font-size: 20px;
+    line-height: 24px; } }
+
+@media (max-width: 608px) {
+  .form-head-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 10px; }
+    .form-head-block .logo--biz-triumf {
+      -ms-flex-order: 1;
+          order: 1; }
+    .form-head-block .logo--fond {
+      -ms-flex-order: 2;
+          order: 2;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .form-head-block .form-header {
+      -ms-flex-order: 3;
+          order: 3;
+      padding-top: 20px; } }
+
+@media (max-width: 400px) {
+  .form-head-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 10px; }
+    .form-head-block .logo--fond {
+      -ms-flex-order: 2;
+          order: 2;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; } }
