@@ -871,6 +871,16 @@ html {
       flex-wrap: wrap;
   padding-bottom: 40px; }
 
+.winners_photo img {
+  -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+}
+
+.winners_photo img:hover {
+  -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+}
+
 .winners_desc {
   width: 253px;
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
