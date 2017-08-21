@@ -768,38 +768,56 @@ html {
   background: rgba(0, 0, 0, 0.7); }
 
 .past-event_video--show {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 75%; 
   animation: fadeInDownBig 0.6s; }
 
 @media (max-width: 360px) {
   .past-event_video {
     width: 280px;
-    height: 158px; } }
+    height: 158px; 
+    margin-left:  -140px;
+    margin-top: -79px;
+  }
+}
 
 @media (min-width: 470px) {
   .past-event_video {
     width: 320px;
-    height: 180px; } }
+    height: 180px; 
+    margin-left:  -160px;
+    margin-top: -90px;
+  }
+}
 
 @media (min-width: 680px) {
   .past-event_video {
     width: 540px;
-    height: 360px; } }
+    height: 360px; 
+    margin-left:  -270px;
+    margin-top: -180px;
+  }
+}
 
 @media (min-width: 900px) {
   .past-event_video {
     width: 853px;
-    height: 480px; } }
+    height: 480px; 
+    margin-left:  -426px;
+    margin-top: -240px;
+  }
+}
 
 @media (min-width: 1440px) {
   .past-event_video {
     width: 1280px;
-    height: 720px; } }
+    height: 720px; 
+    margin-left:  -640px;
+    margin-top: -360px;
+  }
+}
 
 @media (min-width: 320px) and (max-width: 900px) {
   .past-event_inner {
