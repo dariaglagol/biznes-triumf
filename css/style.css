@@ -171,7 +171,7 @@ html {
   .logo_contacts {
     font-size: 12px;
     margin-top: 7px; }
-  .logo--biz-triumf > img {
+  .logo--biz-triumf img {
     width: 150px;
     height: 80px; }
   .logo--biz-triumf-bottom {
@@ -190,7 +190,7 @@ html {
     margin-right: -14px; }
   .logo_contacts {
     font-size: 13px; }
-  .logo--biz-triumf > img {
+  .logo--biz-triumf img {
     width: 230px;
     height: 116px; }
   .logo--biz-triumf-bottom::before {
@@ -771,7 +771,7 @@ html {
   display: block;
   position: relative;
   left: 50%;
-  top: 75%; 
+  top: 50%; 
   animation: fadeInDownBig 0.6s; }
 
 @media (max-width: 360px) {
@@ -1151,6 +1151,15 @@ html {
   -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
+.feedback_text {
+  font-family: "MyriadPro regular", "Helvetica", sans-serif;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
 .feedback .field {
   display: block;
   width: 100%;
@@ -1185,7 +1194,7 @@ html {
   height: 100%;
   background: rgba(0, 0, 0, 0.5); }
 
-.field_checkbox {
+#agreement-checkbox {
   display: none; }
 
 .field_checkbox-label {
@@ -1215,12 +1224,16 @@ html {
 .field_checkbox-label a {
   font-family: "MyriadPro regular", "Helvetica", sans-serif;
   color: #000000;
-  text-decoration: none; }
+}
 
 @media (min-width: 320px) and (max-width: 900px) {
   .feedback {
     width: 320px;
     margin-left: -160px; } }
+
+.spacer {
+  min-height: 650px;
+}
 
 .form--background {
   background-color: #f0f0f0; }
@@ -1317,32 +1330,68 @@ html {
   text-align: center;
   width: 280px;
   margin: 0 auto; }
-  .reg_sex-block .reg_sex-desc {
-    width: 280px; }
-  .reg_sex-block label {
-    display: inline;
-    margin-bottom: 20px;
-    position: relative; }
-  .reg_sex-block label:nth-of-type(2) {
-    margin-right: 32px; }
-  .reg_sex-block input {
-    display: none; }
-  .reg_sex-block input[type="radio"] + label:before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    right: -26px;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #2e1b16; }
-  .reg_sex-block input[type="radio"]:checked + label:after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    right: -24px;
-    width: 10px;
-    height: 10px;
-    background-color: #2e1b16; }
+
+.reg_sex-block .reg_sex-desc {
+  width: 280px; }
+.reg_sex-block label {
+  display: inline;
+  margin-bottom: 20px;
+  position: relative; }
+.reg_sex-block label:nth-of-type(2) {
+  margin-right: 32px; }
+.reg_sex-block input {
+  display: none; }
+.reg_sex-block input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -26px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #2e1b16; }
+.reg_sex-block input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -24px;
+  width: 10px;
+  height: 10px;
+  background-color: #2e1b16; }
+
+#agreement-checkbox {
+  display: none;
+}
+
+.agreement-label {
+  position: relative;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.agreement-label a {
+  color: #000;
+}
+
+.agreement + .agreement-label::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -18px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #2e1b16;
+}
+
+.agreement:checked + .agreement-label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -18px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/icon-checkbox.png") no-repeat center;
+  background-size: contain;
+}
 
 .form .footer {
   padding-top: 0px; }

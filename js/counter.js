@@ -1,4 +1,4 @@
-var targetDate = new Date('Sep 25, 2017 20:41:00');
+var targetDate = new Date('Nov 29, 2017 20:41:00');
 initializeClock('countdown', targetDate);
 initializeClock('countdown2', targetDate);
 initializeClock('countdown3', targetDate);
@@ -40,7 +40,7 @@ function initializeClock(id, endtime) {
     }
     hoursSpan.innerHTML = ('0' + time.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + time.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + time.seconds).slice(-2);
+    //secondsSpan.innerHTML = ('0' + time.seconds).slice(-2);
   }
 
   var remaining = getTimeRemaining(endtime);
